@@ -1,0 +1,14 @@
+{% macro render_field(field) %}
+    <div class="field">
+        {{ field.label(class="label") }}
+        <div class="control">
+            <div class="select">
+                {{ field() }}                
+            </div>
+        </div>
+        
+        {% for error in field.errors %}
+          <p class="help is-danger" >{{ error }}</p>
+        {% endfor %}
+    </div>
+{% endmacro %}

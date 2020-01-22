@@ -1,0 +1,54 @@
+{% extends 'layout.html' %}
+
+{% block title%}Messages{% endblock %}
+{% block content %}
+    
+    <section class="section">
+        <article class="content">
+                <h3>{{ _('Messages')}}</h3>
+            </article>
+        <div class=" columns">
+            <div class=" column is-one-third" style="background-color: #eee;">
+                {% if users != None %}
+                    {% for user in users %}
+                       <nav class="panel"> 
+                        <a class="panel-block" href="{{ url_for('chat.dialogue',sender=user.username) }}">{{ user.username }}</a>
+                        </nav>
+                    {% endfor %}
+                {% else %}
+                    
+                {% endif %}
+            </div>
+
+            <div class="column is-8 custom-msg-box">
+                <div class="level message-header">
+                    <div class="level-left">
+                        <p>{{ _('Chat avec')}}: <a class="text-red" href="{{ url_for('main.profile',username=sender)}}">{{ sender }}</a></p>
+                    </div>
+                    <div class="level-right">
+                        {% if dia.conversation != None %}
+                            {% if count <= 20 %}
+                            <p><span class="msg_counter">{{count}}/20 Message (s)</span></p>
+                            {% endif %}
+                        {% endif %}
+                        
+                    </div>
+                </div>
+                <ul id="m_list" class="chat-box">
+                {% if chat %}
+                    {% for m in chat %}
+                        <li id="{{ m.id }}"><p class="msg-text"><strong>{{ m.sender.username }}</strong> : {{ m.message }}</p></li>
+                    {% endfor %}
+                {% endif %}
+            </ul>
+            <div>
+                <div class="field" style="margin-top: .75rem;">
+                    <textarea id="m_text" class="em textarea" placeholder="{{ _('tapez votre message ici')}}"></textarea>
+                </div>
+                <a id="send_msg" class="button">{{ _('Envoyer') }}</a>
+                <a id="clear_msg" class="button">{{ _('Effacer') }}</a>
+            </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

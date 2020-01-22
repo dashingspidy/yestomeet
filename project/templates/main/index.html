@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Yes To Meet You – Page d’accueil</title>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/pepper-grinder/jquery-ui.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+        <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+    </head>
+    <body>
+        <section class="hero homepage is-medium is-bold">
+            <div class="hero-head">
+                <nav class="navbar">
+                  <div class="container">
+                        <div class="navbar-brand">
+                            <div class="navbar-item">
+                                <a href="/" class="brand-logo">
+                                    <img src="/static/img/logo.svg" alt="Yestomeetyou" width="250">
+                                </a>
+                            </div>
+                            <div class="navbar-burger" data-target="navMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="navbar-menu" id="navMenu">
+                            <div class="navbar-end">
+                                <a href="/about" class="navbar-item">{{ _('À propos') }}</a>
+                                {% if not current_user.is_authenticated %}
+                                    <a href="{{ url_for('user.register')}}" class="navbar-item">{{ _('S\'enregistrer')}}</a>
+                                    <a href="{{ url_for('user.login') }}" class="navbar-item">{{ _('Déjà membre?') }}</a>
+                                {% endif %}
+                                <a href="/blog" class="navbar-item">{{ _('Blog') }}</a>
+                                <a href="/contact" class="navbar-item">{{ _('Contact') }}</a>
+                            </div>
+                        </div>
+                  </div>
+                </nav>
+            </div>
+            <div class="hero-body">
+                <div class="columns is-mobile">
+                    <div class="column is-half-desktop is-half-mobile">
+                        <div class="custom-box">
+                            <div>
+                                <a class="button is-large" href="{{ url_for('user.register')}}">
+                                <span>{{_('Inscrivez-vous')}}</span> <span class="icon is-small">
+                                      <i class="fa fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div style="margin-top: 1rem;">
+                                <a class="button is-large" href="{{url_for('user.login')}}">
+                                <span>{{_('Déjà membre?')}}</span><span class="icon is-small">
+                                      <i class="fa fa-chevron-right"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section>
+            <div class="columns">
+                <div class="column">
+                    {% if slide %}
+                    <div class="slide-post is-hidden-mobile">
+                        {% for s in slide %}
+                            <h1>{{s.post}}</h1>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="columns features">
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image has-text-centered">
+                            <img src="../static/img/photo.svg" alt="Yes To Be Direct">
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h4 class=" title has-text-centered text">{{ _('Yes To Be Direct') }}</h4>
+                                <p class="normal has-text-centered">{{ _('Des échanges simples et directs pour trouver la bonne personne. Un espace de rencontre avec photos visibles dès le départ. Mais, Soyer la personne qui vous rend heureux.') }}</p>
+                                <div class="has-text-centered">
+                                    <a class="button text-white" href="/about">{{ _('Lire la suite')}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4 grey-bg">
+                    <div class="card direct-yes">
+                        <div class="card-image has-text-centered">
+                            <img src="../static/img/couer.svg" alt="Yes To Take Time">
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h4 class=" title has-text-centered text">{{ _('Yes To Take Time') }}</h4>
+                                <p class="normal has-text-centered">{{ _('Un concept unique : Faites des rencontres sans montrer vos photos. Elles n’apparaîtront qu’après 20 échanges de messages. Rien ne presse. Révélez-vous progressivement. Vous avez tellement plus à offrir qu’une image superficielle.') }}</p>
+                                <div class="has-text-centered">
+                                    <a class="button text-white" href="/about">{{ _('Lire la suite')}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column is-4">
+                    <div class="card">
+                        <div class="card-image has-text-centered">
+                            <img src="../static/img/personnes.svg" alt="What About You ?">
+                        </div>
+                        <div class="card-content">
+                            <div class="content">
+                                <h4 class=" title has-text-centered text">{{ _('What About You ?') }}</h4>
+                                <p class="normal has-text-centered">{{ _('Cet espace est dédié à votre personnalité. Exprimez vos idées pour révéler votre caractère. Vous y trouverez de nombreux sujets liés à l’amour et destinés à vous faire réagir.') }}</p>
+                                <div class="has-text-centered">
+                                <a class="button text-white" href="/about">{{ _('Lire la suite')}}</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <div class="sandbox">
+            <div class="tile is-ancestor grey-bg">
+                <div class="tile is-vertical is-6">
+                    <div class="tile is-parent">
+                        <article class="tile is-child special-case">
+                            <p class="title is-9">{{ _('Retour à l’amour') }}</p>
+                            <div class="content">
+                                <p>{{ _("Yes To Meet You est un site de rencontres différent des autres. Notre approche Slow Love ( Retour à l’amour) vous invite à prendre votre temps pour trouver l’amour.Rien ne presse. Révélez-vous progressivement. Vous avez tellement plus à offrir qu’une image superficielle. Sur ce site, tout est conçu pour favoriser l’échange dans le respect mutuel. À l’heure où tout va plus vite, où tout se consomme et se consume, c’est bon de prendre son temps.") }}</p>
+                                <p><strong>{{ _("<a class='text-red' href='/register'>Inscrivez-vous</a> vite et (Re)découvrez l’amour comme au temps où l’on savait s’aimer.") }}</strong></p>
+                               <a class="button text-white" href="/about">{{ _('Lire la suite')}}</a> 
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child special-case">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/g30ZdNvInD8?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <div class="container public">
+            <div class="columns">
+                <div class="column">
+                    <p class="title">{{ _('Yes To Be Direct')}}</p>
+                    <div class="columns">
+                        {% for d in direct %}
+                            <div class="column is-one-third">
+                                <div class="card">
+                                    <div class="card-image">
+                                        {% for p in d.photos %}
+                                            {% if p.default %}
+                                                <figure>
+                                                    <img src="http://yestomeetyou.s3.amazonaws.com/{{p.url}}" alt="{{d.username}}">
+                                                </figure>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="media-content">
+                                            <p>{{d.username}}</p>
+                                            <p style="font-size: 16px; text-align: initial;">{{age(d.birthdate)}} {{_('ans')}} | {{d.location}}</p>
+                                            <a href="/users" class="button">{{ _('Voir profil')}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="bord"></div>
+                <div class="column">
+                    <p class="title">{{ _('Yes To Take Time')}}</p>
+                    <div class="columns">
+                        {% for t in taketime %}
+                            <div class="column is-one-third">
+                                <div class="card">
+                                    <div class="card-image">
+                                        {% for p in t.photos[:1] %}
+                                            {% if p.default and p.private %}
+                                                {% if t.gender == 'men' %}
+                                                    <figure>
+                                                        <img class="image-center" src="../static/img/home-ano.svg" width="100">
+                                                    </figure>
+                                                {% elif t.gender == 'women'%}
+                                                    <figure>
+                                                        <img class="image-center" src="../static/img/femme-ano.svg" width="100">
+                                                    </figure>
+                                                {% endif %}
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                    <div class="card-content">
+                                        <div class="media-content">
+                                            <p>{{t.username}}</p>
+                                            <p style="font-size: 16px; text-align: initial;">{{age(t.birthdate)}} {{_('ans')}} | {{t.location}}</p>
+                                            <a href="/users" class="button">{{ _('Voir profil')}}</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sandbox">
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-6">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-white">
+                            <p class="title">{{ _("Qu’est-ce qui vous attend sur Yes To Meet You ?") }}</p>
+                            
+                            <div class="content">
+                                <h2><strong>{{ _("L’espace Yes To Take Time.") }}</strong></h2>
+                                <p>{{ _("Un lieu où l’on se rencontre et où l’on prend le temps de se connaître avant de se révéler. Votre photo n’apparaitra qu’après 10 ou 20 échanges avec votre prétendant(e).L’espace Yes to Be Direct.Un lieu d’échanges simples et directs pour rencontrer des célibataires sympas.Cadeaux réels.On aime tous être gâté. Offrez et recevez des fleurs ou des chocolats en vrai.Photos de qualité.Trouvez grâce à ce site des photographes professionnels pour optimiser votre profil.What about you ? Un forum pour exprimer vos idées et révéler votre personnalité aux autres membres.") }}</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-white">
+                        <p class="title">{{ _("Confidentialité") }}</p>
+                        <div class="content">
+                            <p>{{ _("<strong>Yes To Meet</strong> You garantit un respect total de vos données personnelles. Elles seront conservées en toute sécurité. Elles ne seront ni vendues, ni échangées sans un accord préalable de votre part. Vos coordonnées ne seront en aucun cas transmises  à d’autres utilisateurs du site.") }}</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+        
+        <div class="sandbox is-hidden-mobile">
+            <div class="tile is-ancestor">
+                <div class="tile is-vertical is-6">
+                    <div class="tile is-parent">
+                        <article class="tile is-child notification is-white">
+                            <p class="title">{{ _("Disponible") }}</p>
+                            <div class="content level">
+                                <div class="level-left">
+                                    <div class="level-item">
+                                        <figure>                            
+                                            <img src="../static/img/apple.svg" width="200" alt="apple">
+                                        </figure>
+                                        <figure style="margin-top: -33px;">                            
+                                            <img src="../static/img/play.svg" width="200" alt="google play">
+                                        </figure> 
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child notification is-white">
+                        <p class="title">{{ _("Partger") }}</p>
+                        <figure class="image is-64x64 social">                            
+                            <img src="../static/img/instagrame-fonce.svg" alt="instagram">
+                        </figure>
+                        <figure class="image is-64x64 social">
+                            <img src="../static/img/facebook-fonce.svg" alt="facebook">
+                        </figure>
+                        <figure class="image is-64x64 social">
+                            <img src="../static/img/twitter-fonce.svg" alt="twitter">
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+                <div class="content condition">
+                    <p class="subtitle has-text-centered"><a class="text-white" href="{{url_for('main.conditions')}}">{{ _("Conditions générales d'utilisation C.G.U")}}</a></p>
+                </div>
+                <div class="content copyright">
+                    <p class="has-text-centered">Copyright © yestomeetyou.com 2017. {{ _("Tous les droits sont réservés")}}</p>
+                </div>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+                if ($navbarBurgers.length > 0) {
+
+                    $navbarBurgers.forEach(function ($el) {
+                      $el.addEventListener('click', function () {
+                        var target = $el.dataset.target;
+                        var $target = document.getElementById(target);
+                        $el.classList.toggle('is-active');
+                        $target.classList.toggle('is-active');
+                      });
+                    });
+                }
+            });
+        </script>
+    </body>
+</html>

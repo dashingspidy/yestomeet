@@ -1,0 +1,36 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+        <article class="section section-about">
+            <p class="title is-3" style="color: #000 !important;">{{ _("Yes To Meet You, c’est le respect de l’autre.") }}</p>
+            <p class="content">{{ _("Si quelqu’un vous ennuie, bloquez-le. Il ne pourra plus communiquer avec vous.") }}</p>
+        
+        <div class="columns users_list">
+            {% if block_list %}
+                {% for b in block_list %}
+                        <div class="column is-one-quarter">
+                        <div class="card">
+                            <div class="card-photo">
+                                {% for photo in b.blocked_person.photos %}
+                                    {% if photo.default and not photo.private %}
+                                        <figure class="image is-4by3">
+                                            <img src="{{photo.url}}" width="300">
+                                        </figure>
+                                    {% endif %}
+                                {% endfor %}
+                            </div>
+                            <div class="card-content">
+                                <div class="media-content">
+                                    <p class="title is-4">{{b.blocked_person.username}}</p>
+                                    <p class="subtitle is-6">{{ age(b.blocked_person.birthdate) }} years old | {{ b.blocked_person.location }}</p>
+                                </div>
+                                <a href="{{url_for('report.remove', id=b.blocked_person.id)}}">{{ _('Débloquer')}}</a>
+                            </div>       
+                        </div>
+                        </div>
+                {% endfor %}
+            {% else %}
+            {% endif %}
+    </div>
+    </article>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% from 'macros/_render_field.html' import render_field %}
+{% extends 'layout.html' %}
+
+{% block content %}
+        
+    <section class="container">
+        <div class="columns" style="margin-top: 40px;">
+            <div class="column is-two-fifths is-offset-one-quarter">
+                <h3 class="title has-text-centered">Recherche</h3>
+                <p>{{ _('Yes To Meet You c’est une autre façon de faire des rencontres. Mais comme point de départ, une petite recherche classique, ce n’est pas si mal. ☺')}}</p>
+                <section class="box">
+                    <form action="{{url_for('main.search')}}" method="POST">
+                        {{ form.csrf_token }}
+                        <div class="field is-horizontal">
+                            <div class="field-label is-normal">
+                                <label class="label">{{ _('Age')}}</label>
+                            </div>
+                            <div class="field-body">
+                                <div class="field">
+                                    {{ render_field(form.age_min)}}
+                                </div>
+                                <div class="field">
+                                    {{ render_field(form.age_max)}}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            {{ render_field(form.gender)}}
+                        </div>
+                        <div class="field has-text-centered">
+                            <input type="submit" class="button" value="{{ _('Recherche')}}">
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

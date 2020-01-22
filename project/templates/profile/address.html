@@ -1,0 +1,33 @@
+{% from 'macros/_render_input.html' import render_input %}
+
+{% extends 'layout.html' %}
+
+{% block content %}
+    
+<section class="container">
+    <div class="columns">
+        <div class="column is-three-fifths is-offset-one-fifth">
+            <section class="section">
+            <p class="title is-3" style="color: #000 !important;">{{ _('Ajouter votre adresse')}}</p>
+            <div class="content">
+                <p>{{ _('En acceptant, vous acceptez les conditions et procédures de Yes To Meet You. Si quelqu’un vous offre des fleurs ou des chocolats, le site vous contactera par e-mail ou par téléphone afin d’obtenir votre accord et de confirmer les données de livraison. (Elles peuvent être différentes de votre adresse d’inscription.)')}}</p>
+                <p><strong>{{ _('Vos coordonnées ne seront en aucun cas transmises à des tiers.') }}</strong></p>
+            </div>
+            <div class="is-divider"></div>
+            <form action="" method="POST">
+                {{ form.csrf_token }}
+                {{ render_input(form.name)}}
+                {{ render_input(form.street)}}
+                {{ render_input(form.postal_code)}}
+                {{ render_input(form.country)}}
+                {{ render_input(form.telephone)}}
+                <div class="field">
+                    <button type="submit" class="button">{{ _('Ajouter')}}</button>
+                </div>
+            </form>
+            </section>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

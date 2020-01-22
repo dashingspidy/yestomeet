@@ -1,0 +1,20 @@
+{% from 'macros/_render_textfield.html' import render_textfield %}
+{% extends 'layout.html' %}
+
+{% block content %}
+    <section class="section">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h3 class="title is-3" style="color: #000 !important;">{{ _('Yes To Meet You compte sur vous.') }}</h3>
+                <p class="content">{{ _('Si vous constatez des publications sensibles, signalez-les. Nous interviendrons dès que possible.')}}</p>
+                <form action="{{url_for('report.report_user', id=user.id)}}" method="POST">
+                    {{ form.csrf_token }}
+                    {{ render_textfield(form.message)}}
+                     <div class="field">
+                         <button class="button" type="submit">{{ _('Envoyer') }}</button>
+                     </div>
+                </form>
+            </div>
+        </div>
+    </section>
+{% endblock %}

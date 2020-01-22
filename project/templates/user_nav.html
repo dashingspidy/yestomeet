@@ -1,0 +1,24 @@
+<nav class="navbar user_nav is-hidden-mobile">
+    <div class="container">
+        <div class="navbar-brand">
+            <div class="navbar-burger" data-target="navMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="navbar-menu">
+            <a href="{{ url_for('profile.profile')}}" class="navbar-item {% if request.path == '/profile' %}active{% endif %}">{{ _('Votre profil')}}</a>
+            <a href="{{url_for('main.online_users')}}" class="navbar-item {% if request.path == '/online_users' %}active{% endif %}">{{ _('En ligne')}}</a>
+            <a href="{{url_for('main.yestaketime')}}" class="navbar-item {% if request.path == '/yestaketime' %}active{% endif %}">{{ _('YesToTakeTime')}}</a>
+            <a href="{{url_for('main.yestobedirect')}}" class="navbar-item {% if request.path == '/yestobedirect' %}active{% endif %}">{{ _('YesToBeDirect')}}</a>
+            <a href="{{url_for('main.search')}}" class="navbar-item {% if request.path == '/search' %}active{% endif %}">{{ _('Rechercher')}}</a>
+            <a href="{{url_for('main.visit')}}" class="navbar-item {% if request.path == '/visit' %}active{% endif %}">{{ _('Vos visites')}}</a>
+            <a href="{{url_for('chat.inbox')}}" class="navbar-item {% if request.path == '/inbox' %}active{% endif %}">{{ _('Messages')}}</a>
+            <div class="navbar-end">
+                <a href="{{url_for('main.my_account')}}" class="navbar-item {% if request.path == '/my_account' %}active{% endif %}">{{ _('préférence')}}</a>
+                <a href="{{ url_for('user.logout') }}" class="navbar-item">{{ _('Déconnexion')}}</a>
+            </div>
+        </div>
+    </div>
+</nav>

@@ -1,0 +1,77 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    
+    <section class="container">
+        <div class="columns">
+            <div class="column is-half">
+                <div class="section">
+                    <p class="title">{{ _('Mes donnés') }}</p>
+                    <div class="is-divider"></div>
+                    <p class="content">{{ _('Adresse Email')}}: {{ user.email }}</p>
+                    {% if not user.confirmed %}
+                        <p class="content">{{ _('Vous n\'avez pas confirmé votre compte.')}}<br> {{ _('Merci de confirmer votre adresse e-mail')}}</p>
+                        <a class="text-white button" href="{{url_for('user.resend_confirmation')}}">Resend confirmation email</a>
+                    {% endif %}
+                    <p class="content" style="margin-top: 1rem;">
+                        <a class="text-white button" href="{{url_for('user.update_password')}}">{{ _('Modifier votre mots de passe')}}</a>
+                    </p>
+                    <p class="content" >
+                        <a class="text-red" href="{{ url_for('report.blocklist')}}">{{ _('Block Liste')}}</a>
+                    </p>
+                    {% if profile.gift == 1 %}
+                        <p class="content">
+                            <a class="text-red" href="{{url_for('profile.update_gift')}}">{{ _('Je ne veux plus recevoir de cadeau.')}}</a>
+                        </p>
+                    {% else %}
+                        <p class="content">
+                            <a class="text-red" href="{{url_for('profile.update_gift')}}">{{ _('J\'aimerais recevoir des cadeaux.')}}</a>
+                        </p>
+                    {% endif %}
+                    {% if address != None %}
+                        <p class="content">
+                            <a class="text-red" href="{{url_for('profile.update_address')}}">{{ _('Mettez à jour votre adresse')}}</a>
+                        </p>
+                    {% else %}
+                        <p class="content">
+                            <a class="text-red" href="{{url_for('profile.address')}}">{{ _('Ajoutez votre adresse')}}</a>
+                        </p>
+                    {% endif%}
+                    <article>
+                        <p class="title" style="color: #000 !important;">{{ _('Ne ratez rien !')}}</p>
+                        <p class="subtitle">{{ _('Yes To Meet You peut vous avertir quand il se passe quelque chose.')}}</p>
+                    </article>
+                    {% if user.notif == True %}
+                        <p class="content">
+                            <a href="{{url_for('user.unsbscribe')}}" class="text-red">{{ _('Je ne veux plus recevoir des notifications')}}</a>
+                        </p>
+                    {% else %}
+                        <p class="content">
+                            <a href="{{url_for('user.subscribe')}}" class="text-red">{{ _('Je veux recevoir des notifications.')}}</a>
+                        </p>
+                    {% endif%}
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="section">
+                    <p class="title">{{ _('Mon abonnement') }}</p>
+                    <div class="is-divider"></div>
+                    {% if sub %}
+                        <p class="content"> {{ _('Plan d\'abonnement')}} : {{ sub.plan | upper }}</p>
+                        <p>{{ _('Expire à')}}: {{ sub.expire_at }}</p>
+                        <a href="{{url_for('subscription.cancel_subscription')}}">{{ _('Annuler l\'abonnement')}}</a>
+                        <div>
+                            {% include 'main/_cc_form.html'%}
+                        </div>
+                        
+                    {% else %}
+                        <!-- <p>{{ _('Pas d\'abonnement actif!')}}</p>
+                        <a class='button' href="{{url_for('subscription.plan')}}">{{ _('je m\'abonne')}}</a> -->
+                        <p>{{ _('Profitez-en, Yes To Meet You est gratuit jusqu’en <strong>avril 2018.</strong>')}}</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>{% block title%} {% endblock %} - Yes To Meet You</title>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/pepper-grinder/jquery-ui.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/stripe.css')}}">
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+        <script src="https://js.stripe.com/v3/"></script>
+        <script src="{{ url_for('static', filename='js/jquery.js') }}"></script>
+        <link rel="stylesheet" href="../static/css/emojionearea.css">
+        <script src="../static/js/emojionearea.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='js/chat.js') }}"></script>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        {% include 'nav.html' %}
+        {% if current_user.is_authenticated %}
+            {% include 'user_nav.html' %}
+        {% endif %}     
+        <div class="container">
+            {% block content %}{% endblock%}
+        </div>
+        {% include 'social.html' %}
+        <footer>
+            <div class="content condition">
+                <p class="has-text-centered"> <a href="{{url_for('main.conditions')}}" class="text-white">{{ _("Conditions générales d'utilisation C.G.U")}}</a></p>
+            </div>
+            <div class="content copyright">
+                <p class="has-text-centered">Copyright © yestomeetyou.com 2017. {{ _("Tous les droits sont réservés")}}</p>
+            </div>
+        </footer>
+        <script src="{{ url_for('static', filename='js/jquery-ui.js') }}"></script>  
+        <script src="{{ url_for('static', filename='js/birthdate.js') }}"></script>
+        <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
+        <script id="dsq-count-scr" src="//yestomeet.disqus.com/count.js" async></script>
+    </body>
+</html>

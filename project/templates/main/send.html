@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <section class="container">
+        <article class="content">
+            <h2 class="title">{{ _('Confirmation de paiement')}}</h2>
+            <p class="subtitle">{{ _('Nous avons bien reçu votre commande.')}}</p>
+            <p><strong>{{ _('Important : un délai de 48 heures est possible avant que')}} {{user.username}} {{ _('reçoive son cadeau.')}}</strong></p>
+        </article>
+    </section>
+    
+{% endblock %}

@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ _('À propos')}}{% endblock %}
+{% block content %}
+    
+    <article class="section section-about">
+        <p class="title is-3" style="color: #000 !important;">{{ _("À propos de Yes To Meet You.") }}</p>
+        <p class="content">{{ _("Yes To Meet You est un site de rencontres différent des autres. Tout y est conçu pour favoriser l’échange dans le respect mutuel. À l’heure où tout va plus vite, où tout se consomme et se consume, c’est bon de prendre son temps.") }}</p>
+    </article>
+
+    <article class="section section-about">
+        <p class="title">{{ _("Concrètement, Yes To Meet You, c’est quoi ?")}}</p>
+        <p>{{ _("2 espaces de rencontre.")}}</p>
+        <p>{{ _("1 forum pour vous exprimer.") }}</p>
+        <p>{{ _("Des cadeaux réels.")}}</p>
+        <p>{{ _("Des photos de qualité.")}}</p>
+    </article>
+
+    <article class="section section-about">
+        <p class="title">{{ _("2 salles, 2 ambiances.")}}</p>
+        <p><strong>{{ _("Vous disposez de deux espaces de rencontre.")}}</strong></p>
+        <br>
+        <div class="columns">
+            <div class="column" style="padding-right: 60px !important;">
+                <h2><strong>Yes To Take Time</strong></h2>
+
+                <p>{{ _("Faites des rencontres sans montrer vos photos. Elles n’apparaîtront qu’après 20 échanges de messages. Place au dialogue, la communication et à l’échange. Rien ne presse. Révélez-vous progressivement. Vous avez tellement plus à offrir qu’une image superficielle.")}}</p>
+            </div>
+            <div class="column" style="padding-left: 20px !important;">
+                <h2><strong>Yes To Be Direct</strong></h2>
+                <p>{{ _("vous permet de rencontrer des célibataires sympas de façon simple et directe.Un espace de rencontre avec photos visibles dès le départ. Pour les romantiques qui on quand même besoin de concret.") }}</p>
+            </div>
+        </div>
+    </article>
+
+    <article class="section section-about">
+        <p class="title">{{ _("What About You ?") }}</p>
+        <p>{{ _("Sur Yes To Meet You, le plus important, c’est vous et votre personnalité. C’est pourquoi nous avons imaginé un espace dans lequel nous vous invitons à exprimer vos idées. Un espace convivial sur lequel vous pouvez réagir et où les autres membres peuvent se faire une idée des richesses de votre personnalité.What About You, c’est votre espace, vous y trouverez de nombreux sujets liés à l’amour et destinés à vous faire réagir. Exprimez vos idées pour que les autres membres découvrent votre caractère et aient envie d’en savoir plus sur vous.")}}</p>
+    </article>
+    
+    <div class="columns" style="margin-top: 1rem;">
+        <div class="column is-half abt">
+            <p class="title">{{ _("Des cadeaux réels.")}}</p>
+            <article class="media">
+                <figure class="media-left">
+                    <p class="image is-128x128">
+                        <img  src="../static/img/cadeaux-fond.svg" alt="">
+                    </p>
+                </figure>
+                <div class="media-content">
+                    <div class="content">
+                       <p>{{ _("On aime tous recevoir de petites attentions. C’est la preuve que l’autre s’intéresse à vous. C’est pourquoi, sur Yes To Meet You, les cadeaux sont bien réels. Offrez des fleurs ou des chocolat à l’élu de votre cœur en toute simplicité.") }}</p> 
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="column abt">
+            <p class="title">{{ _("Des photos de qualité.")}}</p>
+            <article class="media">
+                
+                <figure class="media-left">
+                    <p class="image is-128x128">
+                       <img src="../static/img/camara-fond.svg" alt=""> 
+                    </p>
+                </figure>
+                <div class="media-content">
+                    <div class="content">
+                       <p>{{ _("Même si ce n’est pas le physique qui compte, une belle photo peut renforcer votre attractivité. C’est pourquoi, Yes To Meet You vous met en relation avec des photographes professionnels. Ils vous aideront à révéler extérieurement votre beauté intérieure.")}}</p> 
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+    
+    <article class="section section-about">
+        <p class="title">{{ _("Convaincu ? Inscrivez-vous vite. C’est gratuit !")}}</p>
+        <a class="button text-white" href="/register">{{_('Inscrivez-vous')}}</a>      
+    </article>
+
+
+{% endblock %}

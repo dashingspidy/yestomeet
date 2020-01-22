@@ -1,0 +1,195 @@
+{% from 'macros/_render_field.html' import render_field %}
+{% from 'macros/_render_textfield.html' import render_textfield %}
+{% extends 'layout.html' %}
+
+
+{% block title %}Créer mon profil{% endblock %}
+{% block content %}
+    <section class="container section">
+        <div class="columns">
+            <div class="column is-four-fifths is-offset-1">
+                <h3 class="title is-3" style="color: #000 !important;">{{_('Créer mon profil')}}</h3>
+                <div class="content profil-des">
+                    <h3 style="color: #fff;">{{ _('YES ! Enfin un site où on existe par sa personnalité.')}}</h3>
+                    <p style="text-align: center;">{{ _('Sur « Yes To Meet You » le dialogue et l’échange sont très importants. Et pour bien communiquer, il faut pouvoir se faire une idée de l’autre.')}}</p>
+                </div>
+                <div class="columns">
+                    <div class="column">
+                        <h2 class="title">Yes To Be Direct</h2>
+                        <p>{{ _('Des échanges simples et directs pour trouver la bonne personne.')}}</p>
+                    </div>
+                    <div class="bord"></div>
+                    <div class="column">
+                        <h2 class="title">Yes To Take Time</h2>
+                        <p>{{ _('Un concept unique : Faites des rencontres sans montrer vos photos. Elles n’apparaîtront qu’après 10 ou 20 échanges de messages.')}}</p>
+                    </div>
+                </div>
+                <p class="profil-des-require">{{ _('C’est pour cette raison que nous vous demandons de répondre à toutes les questions. (Minimum 50 caractères.)')}}</p>
+                <form action="" method="POST" enctype="multipart/form-data">
+                    {{ form.csrf_token }}
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                {{ form.room.label(class="label") }}
+                                <em>{{ _('Pas besoin de se poser trop de questions, à tout moment vous pourrez changer de salle.')}}</em>
+                                <div class="control">
+                                    <div class="select">
+                                        {{ form.room() }}                
+                                    </div>
+                                </div>
+                                
+                                {% for error in form.room.errors %}
+                                  <p class="help is-danger" >{{ error }}</p>
+                                {% endfor %}
+                            </div>
+                        </div>                        
+                    </div>
+                    {{ render_textfield(form.description)}}
+                    {{ render_textfield(form.slogan)}}
+                    {{ render_textfield(form.first_meet)}}
+                    {{ render_textfield(form.quality)}}
+                    {{ render_textfield(form.defauts)}}
+                    {{ render_textfield(form.dream)}}
+                    {{ render_textfield(form.love)}}
+                    {{ render_textfield(form.partner)}}
+                    {{ render_textfield(form.loisir)}}
+                    {{ render_textfield(form.friend)}}
+                    {{ render_textfield(form.experience)}}
+                    {{ render_textfield(form.boulot)}}
+                    {{ render_textfield(form.animal)}}
+                    {{ render_textfield(form.enfant)}}
+                    {{ render_textfield(form.future)}}
+                    {{ render_textfield(form.fierte)}}
+                    {{ render_textfield(form.culture)}}
+                    {{ render_textfield(form.malaise)}}
+                    {{ render_textfield(form.sortie)}}
+                    {{ render_textfield(form.voyage)}}
+                    {{ render_textfield(form.addication)}}
+                    {{ render_textfield(form.passion)}}
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            {{ render_field(form.romantic)}}
+                            <div style="margin-right:1.2rem;">{{ render_field(form.marriage)}}</div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            {{ render_field(form.want_children)}}
+                            <div>{{ render_field(form.nationality)}}</div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            {{ render_field(form.body_type)}}
+                            <div style="margin-right:2.8rem;">{{ render_field(form.eyes)}}</div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            {{ render_field(form.style)}}
+                            <div style="margin-right:2.8rem;">{{ render_field(form.origin)}}</div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            {{ render_field(form.hair)}}
+                            <div style="margin-right:2.8rem;">{{ render_field(form.hair_length)}}</div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            {{ render_field(form.height)}}
+                            <div style="margin-right:10.5rem;">{{ render_field(form.weight)}}</div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            {{ render_field(form.status)}}
+                            <div style="margin-right:2.8rem;">{{ render_field(form.smoke)}}</div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            {{ render_field(form.children)}}
+                            <div style="margin-right:2.8rem;">{{ render_field(form.live)}}</div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            {{ render_field(form.job)}}
+                            <div style="margin-right:2.8rem;">{{ render_field(form.religion)}}</div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            {{ render_field(form.eat)}}
+                            <div style="margin-right:1.1rem;">{{ render_field(form.pet)}}</div>
+                        </div>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            {{ render_field(form.income)}}
+                            <div style="margin-right:3rem;">{{ render_field(form.education)}}</div>
+                        </div>
+                    </div>
+
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            {{ render_field(form.speak1)}}
+                            {{ render_field(form.speak2)}}
+                            {{ render_field(form.speak3)}}
+                            {{ render_field(form.speak4)}}
+                        </div>
+                    </div>
+
+                    <div class="is-divider"></div>
+                    <div class="content">
+                        <h3>{{ _('Ajoutez votre photo pour poursuivre')}}</h3>
+                        <p>{{ _('Ce n’est pas le physique qui compte. Mais une belle photo, ça aide à créer du lien. Choisissez de bonnes photos qui vous mettent en valeur et révèlent votre personnalité.')}}</p>
+                        <p> {{ _('Format: .jpeg, .jpg')}}</p>
+                        <p> {{ _('Poids maximum 5Mo') }}</p>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                {{ form.photo(class="inputfile")}}
+                                {% for error in form.photo.errors %}
+                                  <p class="help is-danger" >{{ error }}</p>
+                                {% endfor %}
+                                <p id = "er" class="help is-danger" style="display: none;">{{ _('Poids du fichier est trop grand')}}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <div class="is-divider"></div>
+                    <div class="content">
+                        <p>
+                            <span><strong>{{ _('Je suis d’accord de recevoir des fleurs ou des chocolats')}}</strong> {{ _('offerts par des membres de Yes To Meet You.')}}</span>
+                        </p>
+                    </div>
+                    <div class="field is-horizontal">
+                        <div class="field-body">
+                            <div class="field">
+                                <div class="control">
+                                    <label class='radio'>
+                                        {{ form.gift() }}
+                                    </label> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <p>{{_('En acceptant, vous acceptez les conditions et procédures de Yes To Meet You. Si quelqu’un vous offre des fleurs ou des chocolats, le site vous contactera par e-mail ou par téléphone afin d’obtenir votre accord et de confirmer les données de livraison. (Elles peuvent être différentes de votre adresse d’inscription.)') }}</p>
+                        <p><strong>{{ _('Vos coordonnées ne seront en aucun cas transmises à des tiers.')}}</strong></p>
+                    </div>
+
+                    <div class="field">
+                        <input type="submit" class="button is-large" value="{{ _('Créer mon profil')}}">
+                    </div>
+                </form>             
+            </div>
+        </div>
+    </section>
+    
+{% endblock %}

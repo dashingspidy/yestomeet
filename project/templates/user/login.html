@@ -1,0 +1,36 @@
+{% from 'macros/_render_input.html' import render_input %}
+{% extends 'layout.html' %}
+{% block title %}{{ _('Déjà membre')}}{% endblock %}
+{% block content %}
+    <section class="hero">
+    <div class="hero-body">
+      <div class="container ">
+        <div class="column is-4 is-offset-4">
+          <h3 class="title has-text-grey">{{ _('Se connecter')}}</h3>
+          {% with messages = get_flashed_messages() %}
+            {% if messages %}
+              {% for message in messages %}
+              <div class="notification is-danger">
+                <button class="delete"></button>
+                {{ message }}
+              </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+          <div class="box">
+            <form method="POST" action="{{ url_for('user.login') }}">
+              {{ form.csrf_token }}
+              {{ render_input(form.email) }}
+              {{ render_input(form.password) }}
+              {{ form.submit(class="button is-block is-large") }}
+            </form>
+          </div>
+          <p class="has-text-grey">
+            <a href="{{url_for('user.forgot')}}" class="left text-red">{{ _('Mots de passe oublié?') }}</a> &nbsp;·&nbsp;
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+{% endblock %}

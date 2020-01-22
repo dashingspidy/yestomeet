@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block title %}Bienvenue sur What About You ?{% endblock %}
+{% block content %}
+    
+    <article class="section section-about">
+        <p class="title is-3" style="color: #000 !important;">{{ _("Bienvenue sur What About You ?") }}</p>
+        <p class="content">{{ _('What About You, c’est votre blog. Cet espace est dédié à votre personnalité. Vous y trouverez de nombreux sujets liés à l’amour et destinés à vous faire réagir. Exprimez vos idées pour que les autres membres découvrent votre caractère et aient envie d’en savoir plus sur vous.')}}</p>
+    </article>
+
+    <section class="section">
+        <div class="columns">
+            <div class="column is-three-fifths">
+                {% if posts %}
+                    {% for post in posts %}
+                        <article class="content">
+                            <h3>{{post.title}}</h3>
+                            <p>{{post.post}}</p>
+                            <a class="button text-white" href="{{url_for('main.article',id=post.id)}}">{{ _('lire suite')}}</a>
+                            <div class="is-divider"></div>
+                        </article>
+                    {% endfor %}
+                 {% endif %}
+            </div>
+        </div>
+    </section>
+{% endblock %}

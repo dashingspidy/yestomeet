@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="columns users_list">
+    {% if visit_list != None %}
+        {% for v in visit_list %}
+                <div class="column is-one-quarter">
+                <div class="card">
+                    <div class="card-photo">
+                        {% for photo in v.visitor.photos %}
+                            {% if photo.default and not photo.private %}
+                                <figure class="image is-4by3">
+                                    <img src="{{photo.url}}" width="300">
+                                </figure>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                    <div class="card-content">
+                        <div class="media-content">
+                            <p class="title is-4"><a href="{{url_for('main.profile',username=v.visitor.username)}}">{{ v.visitor.username}}</a></p>
+                            <p class="subtitle is-6">{{ age(v.visitor.birthdate) }} years old | {{ v.visitor.location }}</p>
+                        </div>
+                    </div>       
+                </div>
+                </div>
+        {% endfor %}
+    {% else %}
+        <section class="container">
+            <p>{{ _('Rhooo, vous n’avez pas encore eu de visites pour le moment. ☹ Contactez des membres et commencez une belle relation. ☺')}}</p>            
+        </section>
+    {% endif %}
+    </div>
+{% endblock %}

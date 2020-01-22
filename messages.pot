@@ -1,0 +1,2633 @@
+# Translations template for PROJECT.
+# Copyright (C) 2017 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-12-19 10:39+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: project/main/forms.py:11
+msgid "min"
+msgstr ""
+
+#: project/main/forms.py:15
+msgid "max"
+msgstr ""
+
+#: project/main/forms.py:19
+msgid "sexe"
+msgstr ""
+
+#: project/main/forms.py:20 project/user/forms.py:42 project/user/forms.py:46
+msgid "un homme"
+msgstr ""
+
+#: project/main/forms.py:20 project/user/forms.py:42 project/user/forms.py:46
+msgid "une femme"
+msgstr ""
+
+#: project/main/forms.py:22 project/user/forms.py:48
+msgid "Ville"
+msgstr ""
+
+#: project/main/forms.py:26
+msgid "Votre nom"
+msgstr ""
+
+#: project/main/forms.py:28
+msgid "Votre email"
+msgstr ""
+
+#: project/main/forms.py:29
+msgid "Votre Téléphone"
+msgstr ""
+
+#: project/main/forms.py:31
+msgid "Votre message"
+msgstr ""
+
+#: project/profile/form_values.py:4
+msgid "Please select your nationality"
+msgstr ""
+
+#: project/profile/form_values.py:5
+msgid "Afghan"
+msgstr ""
+
+#: project/profile/form_values.py:6
+msgid "Albanian"
+msgstr ""
+
+#: project/profile/form_values.py:7
+msgid "Algerian"
+msgstr ""
+
+#: project/profile/form_values.py:8
+msgid "American"
+msgstr ""
+
+#: project/profile/form_values.py:9
+msgid "Andorran"
+msgstr ""
+
+#: project/profile/form_values.py:10
+msgid "Angolan"
+msgstr ""
+
+#: project/profile/form_values.py:11
+msgid "Antiguans"
+msgstr ""
+
+#: project/profile/form_values.py:12
+msgid "Argentinean"
+msgstr ""
+
+#: project/profile/form_values.py:13
+msgid "Armenian"
+msgstr ""
+
+#: project/profile/form_values.py:14
+msgid "Australian"
+msgstr ""
+
+#: project/profile/form_values.py:15
+msgid "Austrian"
+msgstr ""
+
+#: project/profile/form_values.py:16 project/profile/form_values.py:439
+msgid "Azerbaijani"
+msgstr ""
+
+#: project/profile/form_values.py:17
+msgid "Bahamian"
+msgstr ""
+
+#: project/profile/form_values.py:18
+msgid "Bahraini"
+msgstr ""
+
+#: project/profile/form_values.py:19
+msgid "Bangladeshi"
+msgstr ""
+
+#: project/profile/form_values.py:20
+msgid "Barbadian"
+msgstr ""
+
+#: project/profile/form_values.py:21
+msgid "Barbudans"
+msgstr ""
+
+#: project/profile/form_values.py:22
+msgid "Batswana"
+msgstr ""
+
+#: project/profile/form_values.py:23 project/profile/form_values.py:485
+msgid "Belarusian"
+msgstr ""
+
+#: project/profile/form_values.py:24
+msgid "Belgian"
+msgstr ""
+
+#: project/profile/form_values.py:25
+msgid "Belizean"
+msgstr ""
+
+#: project/profile/form_values.py:26
+msgid "Beninese"
+msgstr ""
+
+#: project/profile/form_values.py:27
+msgid "Bhutanese"
+msgstr ""
+
+#: project/profile/form_values.py:28
+msgid "Bolivian"
+msgstr ""
+
+#: project/profile/form_values.py:29
+msgid "Bosnian"
+msgstr ""
+
+#: project/profile/form_values.py:30
+msgid "Brazilian"
+msgstr ""
+
+#: project/profile/form_values.py:31
+msgid "British"
+msgstr ""
+
+#: project/profile/form_values.py:32
+msgid "Bruneian"
+msgstr ""
+
+#: project/profile/form_values.py:33
+msgid "Bulgarian"
+msgstr ""
+
+#: project/profile/form_values.py:34
+msgid "Burkinabe"
+msgstr ""
+
+#: project/profile/form_values.py:35 project/profile/form_values.py:425
+msgid "Burmese"
+msgstr ""
+
+#: project/profile/form_values.py:36
+msgid "Burundian"
+msgstr ""
+
+#: project/profile/form_values.py:37
+msgid "Cambodian"
+msgstr ""
+
+#: project/profile/form_values.py:38
+msgid "Cameroonian"
+msgstr ""
+
+#: project/profile/form_values.py:39
+msgid "Canadian"
+msgstr ""
+
+#: project/profile/form_values.py:40
+msgid "Cape Verdean"
+msgstr ""
+
+#: project/profile/form_values.py:41
+msgid "Central African"
+msgstr ""
+
+#: project/profile/form_values.py:42
+msgid "Chadian"
+msgstr ""
+
+#: project/profile/form_values.py:43
+msgid "Chilean"
+msgstr ""
+
+#: project/profile/form_values.py:44
+msgid "Chinese"
+msgstr ""
+
+#: project/profile/form_values.py:45
+msgid "Colombian"
+msgstr ""
+
+#: project/profile/form_values.py:46
+msgid "Comoran"
+msgstr ""
+
+#: project/profile/form_values.py:47
+msgid "Congolese"
+msgstr ""
+
+#: project/profile/form_values.py:48
+msgid "Costa Rican"
+msgstr ""
+
+#: project/profile/form_values.py:49
+msgid "Croatian"
+msgstr ""
+
+#: project/profile/form_values.py:50
+msgid "Cuban"
+msgstr ""
+
+#: project/profile/form_values.py:51
+msgid "Cypriot"
+msgstr ""
+
+#: project/profile/form_values.py:52 project/profile/form_values.py:470
+msgid "Czech"
+msgstr ""
+
+#: project/profile/form_values.py:53
+msgid "Danish"
+msgstr ""
+
+#: project/profile/form_values.py:54
+msgid "Djibouti"
+msgstr ""
+
+#: project/profile/form_values.py:55
+msgid "Dominican"
+msgstr ""
+
+#: project/profile/form_values.py:56 project/profile/form_values.py:443
+msgid "Dutch"
+msgstr ""
+
+#: project/profile/form_values.py:57
+msgid "Dutchman"
+msgstr ""
+
+#: project/profile/form_values.py:58
+msgid "Dutchwoman"
+msgstr ""
+
+#: project/profile/form_values.py:59
+msgid "East Timorese"
+msgstr ""
+
+#: project/profile/form_values.py:60
+msgid "Ecuadorean"
+msgstr ""
+
+#: project/profile/form_values.py:61
+msgid "Egyptian"
+msgstr ""
+
+#: project/profile/form_values.py:62
+msgid "Emirian"
+msgstr ""
+
+#: project/profile/form_values.py:63
+msgid "Equatorial Guinean"
+msgstr ""
+
+#: project/profile/form_values.py:64
+msgid "Eritrean"
+msgstr ""
+
+#: project/profile/form_values.py:65
+msgid "Estonian"
+msgstr ""
+
+#: project/profile/form_values.py:66
+msgid "Ethiopian"
+msgstr ""
+
+#: project/profile/form_values.py:67
+msgid "Fijian"
+msgstr ""
+
+#: project/profile/form_values.py:68
+msgid "Filipino"
+msgstr ""
+
+#: project/profile/form_values.py:69
+msgid "Finnish"
+msgstr ""
+
+#: project/profile/form_values.py:70 project/profile/form_values.py:405
+msgid "French"
+msgstr ""
+
+#: project/profile/form_values.py:71
+msgid "Gabonese"
+msgstr ""
+
+#: project/profile/form_values.py:72
+msgid "Gambian"
+msgstr ""
+
+#: project/profile/form_values.py:73
+msgid "Georgian"
+msgstr ""
+
+#: project/profile/form_values.py:74 project/profile/form_values.py:398
+msgid "German"
+msgstr ""
+
+#: project/profile/form_values.py:75
+msgid "Ghanaian"
+msgstr ""
+
+#: project/profile/form_values.py:76 project/profile/form_values.py:462
+msgid "Greek"
+msgstr ""
+
+#: project/profile/form_values.py:77
+msgid "Grenadian"
+msgstr ""
+
+#: project/profile/form_values.py:78
+msgid "Guatemalan"
+msgstr ""
+
+#: project/profile/form_values.py:79
+msgid "Guinea-Bissauan"
+msgstr ""
+
+#: project/profile/form_values.py:80
+msgid "Guinean"
+msgstr ""
+
+#: project/profile/form_values.py:81
+msgid "Guyanese"
+msgstr ""
+
+#: project/profile/form_values.py:82
+msgid "Haitian"
+msgstr ""
+
+#: project/profile/form_values.py:83
+msgid "Herzegovinian"
+msgstr ""
+
+#: project/profile/form_values.py:84
+msgid "Honduran"
+msgstr ""
+
+#: project/profile/form_values.py:85 project/profile/form_values.py:460
+msgid "Hungarian"
+msgstr ""
+
+#: project/profile/form_values.py:86
+msgid "I-Kiribati"
+msgstr ""
+
+#: project/profile/form_values.py:87
+msgid "Icelander"
+msgstr ""
+
+#: project/profile/form_values.py:88
+msgid "Indian"
+msgstr ""
+
+#: project/profile/form_values.py:89
+msgid "Indonesian"
+msgstr ""
+
+#: project/profile/form_values.py:90
+msgid "Iranian"
+msgstr ""
+
+#: project/profile/form_values.py:91
+msgid "Iraqi"
+msgstr ""
+
+#: project/profile/form_values.py:92
+msgid "Irish"
+msgstr ""
+
+#: project/profile/form_values.py:93
+msgid "Israeli"
+msgstr ""
+
+#: project/profile/form_values.py:94 project/profile/form_values.py:410
+msgid "Italian"
+msgstr ""
+
+#: project/profile/form_values.py:95
+msgid "Ivorian"
+msgstr ""
+
+#: project/profile/form_values.py:96
+msgid "Jamaican"
+msgstr ""
+
+#: project/profile/form_values.py:97 project/profile/form_values.py:396
+msgid "Japanese"
+msgstr ""
+
+#: project/profile/form_values.py:98
+msgid "Jordanian"
+msgstr ""
+
+#: project/profile/form_values.py:99
+msgid "Kazakhstani"
+msgstr ""
+
+#: project/profile/form_values.py:100
+msgid "Kenyan"
+msgstr ""
+
+#: project/profile/form_values.py:101
+msgid "Kittian and Nevisian"
+msgstr ""
+
+#: project/profile/form_values.py:102
+msgid "Kuwaiti"
+msgstr ""
+
+#: project/profile/form_values.py:103
+msgid "Kyrgyz"
+msgstr ""
+
+#: project/profile/form_values.py:104
+msgid "Laotian"
+msgstr ""
+
+#: project/profile/form_values.py:105
+msgid "Latvian"
+msgstr ""
+
+#: project/profile/form_values.py:106
+msgid "Lebanese"
+msgstr ""
+
+#: project/profile/form_values.py:107
+msgid "Liberian"
+msgstr ""
+
+#: project/profile/form_values.py:108
+msgid "Libyan"
+msgstr ""
+
+#: project/profile/form_values.py:109
+msgid "Liechtensteiner"
+msgstr ""
+
+#: project/profile/form_values.py:110
+msgid "Lithuanian"
+msgstr ""
+
+#: project/profile/form_values.py:111
+msgid "Luxembourger"
+msgstr ""
+
+#: project/profile/form_values.py:112
+msgid "Macedonian"
+msgstr ""
+
+#: project/profile/form_values.py:113 project/profile/form_values.py:446
+msgid "Malagasy"
+msgstr ""
+
+#: project/profile/form_values.py:114
+msgid "Malawian"
+msgstr ""
+
+#: project/profile/form_values.py:115
+msgid "Malaysian"
+msgstr ""
+
+#: project/profile/form_values.py:116
+msgid "Maldivan"
+msgstr ""
+
+#: project/profile/form_values.py:117
+msgid "Malian"
+msgstr ""
+
+#: project/profile/form_values.py:118
+msgid "Maltese"
+msgstr ""
+
+#: project/profile/form_values.py:119
+msgid "Marshallese"
+msgstr ""
+
+#: project/profile/form_values.py:120
+msgid "Mauritanian"
+msgstr ""
+
+#: project/profile/form_values.py:121
+msgid "Mauritian"
+msgstr ""
+
+#: project/profile/form_values.py:122
+msgid "Mexican"
+msgstr ""
+
+#: project/profile/form_values.py:123
+msgid "Micronesian"
+msgstr ""
+
+#: project/profile/form_values.py:124
+msgid "Moldovan"
+msgstr ""
+
+#: project/profile/form_values.py:125
+msgid "Monacan"
+msgstr ""
+
+#: project/profile/form_values.py:126
+msgid "Mongolian"
+msgstr ""
+
+#: project/profile/form_values.py:127
+msgid "Moroccan"
+msgstr ""
+
+#: project/profile/form_values.py:128
+msgid "Mosotho"
+msgstr ""
+
+#: project/profile/form_values.py:129
+msgid "Motswana"
+msgstr ""
+
+#: project/profile/form_values.py:130
+msgid "Mozambican"
+msgstr ""
+
+#: project/profile/form_values.py:131
+msgid "Namibian"
+msgstr ""
+
+#: project/profile/form_values.py:132
+msgid "Nauruan"
+msgstr ""
+
+#: project/profile/form_values.py:133
+msgid "Nepalese"
+msgstr ""
+
+#: project/profile/form_values.py:134
+msgid "Netherlander"
+msgstr ""
+
+#: project/profile/form_values.py:135
+msgid "New Zealander"
+msgstr ""
+
+#: project/profile/form_values.py:136
+msgid "Ni-Vanuatu"
+msgstr ""
+
+#: project/profile/form_values.py:137
+msgid "Nicaraguan"
+msgstr ""
+
+#: project/profile/form_values.py:138
+msgid "Nigerian"
+msgstr ""
+
+#: project/profile/form_values.py:139
+msgid "Nigerien"
+msgstr ""
+
+#: project/profile/form_values.py:140
+msgid "North Korean"
+msgstr ""
+
+#: project/profile/form_values.py:141
+msgid "Northern Irish"
+msgstr ""
+
+#: project/profile/form_values.py:142
+msgid "Norwegian"
+msgstr ""
+
+#: project/profile/form_values.py:143
+msgid "Omani"
+msgstr ""
+
+#: project/profile/form_values.py:144
+msgid "Pakistani"
+msgstr ""
+
+#: project/profile/form_values.py:145
+msgid "Palauan"
+msgstr ""
+
+#: project/profile/form_values.py:146
+msgid "Panamanian"
+msgstr ""
+
+#: project/profile/form_values.py:147
+msgid "Papua New Guinean"
+msgstr ""
+
+#: project/profile/form_values.py:148
+msgid "Paraguayan"
+msgstr ""
+
+#: project/profile/form_values.py:149
+msgid "Peruvian"
+msgstr ""
+
+#: project/profile/form_values.py:150 project/profile/form_values.py:417
+msgid "Polish"
+msgstr ""
+
+#: project/profile/form_values.py:151 project/profile/form_values.py:393
+msgid "Portuguese"
+msgstr ""
+
+#: project/profile/form_values.py:152
+msgid "Qatari"
+msgstr ""
+
+#: project/profile/form_values.py:153 project/profile/form_values.py:436
+msgid "Romanian"
+msgstr ""
+
+#: project/profile/form_values.py:154 project/profile/form_values.py:395
+msgid "Russian"
+msgstr ""
+
+#: project/profile/form_values.py:155
+msgid "Rwandan"
+msgstr ""
+
+#: project/profile/form_values.py:156
+msgid "Saint Lucian"
+msgstr ""
+
+#: project/profile/form_values.py:157
+msgid "Salvadoran"
+msgstr ""
+
+#: project/profile/form_values.py:158
+msgid "Samoan"
+msgstr ""
+
+#: project/profile/form_values.py:159
+msgid "San Marinese"
+msgstr ""
+
+#: project/profile/form_values.py:160
+msgid "Sao Tomean"
+msgstr ""
+
+#: project/profile/form_values.py:161
+msgid "Saudi"
+msgstr ""
+
+#: project/profile/form_values.py:162
+msgid "Scottish"
+msgstr ""
+
+#: project/profile/form_values.py:163
+msgid "Senegalese"
+msgstr ""
+
+#: project/profile/form_values.py:164
+msgid "Serbian"
+msgstr ""
+
+#: project/profile/form_values.py:165
+msgid "Seychellois"
+msgstr ""
+
+#: project/profile/form_values.py:166
+msgid "Sierra Leonean"
+msgstr ""
+
+#: project/profile/form_values.py:167
+msgid "Singaporean"
+msgstr ""
+
+#: project/profile/form_values.py:168
+msgid "Slovakian"
+msgstr ""
+
+#: project/profile/form_values.py:169
+msgid "Slovenian"
+msgstr ""
+
+#: project/profile/form_values.py:170
+msgid "Solomon Islander"
+msgstr ""
+
+#: project/profile/form_values.py:171 project/profile/form_values.py:456
+msgid "Somali"
+msgstr ""
+
+#: project/profile/form_values.py:172
+msgid "South African"
+msgstr ""
+
+#: project/profile/form_values.py:173
+msgid "South Korean"
+msgstr ""
+
+#: project/profile/form_values.py:174 project/profile/form_values.py:389
+msgid "Spanish"
+msgstr ""
+
+#: project/profile/form_values.py:175
+msgid "Sri Lankan"
+msgstr ""
+
+#: project/profile/form_values.py:176
+msgid "Sudanese"
+msgstr ""
+
+#: project/profile/form_values.py:177
+msgid "Surinamer"
+msgstr ""
+
+#: project/profile/form_values.py:178
+msgid "Swazi"
+msgstr ""
+
+#: project/profile/form_values.py:179 project/profile/form_values.py:478
+msgid "Swedish"
+msgstr ""
+
+#: project/profile/form_values.py:180
+msgid "Swiss"
+msgstr ""
+
+#: project/profile/form_values.py:181
+msgid "Syrian"
+msgstr ""
+
+#: project/profile/form_values.py:182
+msgid "Taiwanese"
+msgstr ""
+
+#: project/profile/form_values.py:183
+msgid "Tajik"
+msgstr ""
+
+#: project/profile/form_values.py:184
+msgid "Tanzanian"
+msgstr ""
+
+#: project/profile/form_values.py:185 project/profile/form_values.py:412
+msgid "Thai"
+msgstr ""
+
+#: project/profile/form_values.py:186
+msgid "Togolese"
+msgstr ""
+
+#: project/profile/form_values.py:187
+msgid "Tongan"
+msgstr ""
+
+#: project/profile/form_values.py:188
+msgid "Trinidadian or Tobagonian"
+msgstr ""
+
+#: project/profile/form_values.py:189
+msgid "Tunisian"
+msgstr ""
+
+#: project/profile/form_values.py:190 project/profile/form_values.py:409
+msgid "Turkish"
+msgstr ""
+
+#: project/profile/form_values.py:191
+msgid "Tuvaluan"
+msgstr ""
+
+#: project/profile/form_values.py:192
+msgid "Ugandan"
+msgstr ""
+
+#: project/profile/form_values.py:193 project/profile/form_values.py:427
+msgid "Ukrainian"
+msgstr ""
+
+#: project/profile/form_values.py:194
+msgid "Uruguayan"
+msgstr ""
+
+#: project/profile/form_values.py:195
+msgid "Uzbekistani"
+msgstr ""
+
+#: project/profile/form_values.py:196
+msgid "Venezuelan"
+msgstr ""
+
+#: project/profile/form_values.py:197 project/profile/form_values.py:403
+msgid "Vietnamese"
+msgstr ""
+
+#: project/profile/form_values.py:198
+msgid "Welsh"
+msgstr ""
+
+#: project/profile/form_values.py:199
+msgid "Yemenite"
+msgstr ""
+
+#: project/profile/form_values.py:200
+msgid "Zambian"
+msgstr ""
+
+#: project/profile/form_values.py:201
+msgid "Zimbabwean"
+msgstr ""
+
+#: project/profile/form_values.py:206 project/profile/form_values.py:214
+#: project/profile/form_values.py:222 project/profile/form_values.py:229
+#: project/profile/form_values.py:239 project/profile/form_values.py:251
+#: project/profile/form_values.py:264 project/profile/form_values.py:275
+#: project/profile/form_values.py:285 project/profile/form_values.py:294
+#: project/profile/form_values.py:302 project/profile/form_values.py:310
+#: project/profile/form_values.py:316 project/profile/form_values.py:323
+#: project/profile/form_values.py:346 project/profile/form_values.py:363
+#: project/profile/form_values.py:374 project/profile/form_values.py:387
+#: project/profile/form_values.py:491 project/profile/form_values.py:500
+msgid "Choisissez vos critères"
+msgstr ""
+
+#: project/profile/form_values.py:207
+msgid "très romantique"
+msgstr ""
+
+#: project/profile/form_values.py:208
+msgid "assez romantique"
+msgstr ""
+
+#: project/profile/form_values.py:209
+msgid "peu romantique"
+msgstr ""
+
+#: project/profile/form_values.py:210
+msgid "pas de tout romantique"
+msgstr ""
+
+#: project/profile/form_values.py:215
+msgid "sacré"
+msgstr ""
+
+#: project/profile/form_values.py:216
+msgid "important"
+msgstr ""
+
+#: project/profile/form_values.py:217
+msgid "pas indispensable"
+msgstr ""
+
+#: project/profile/form_values.py:218
+msgid "ce n'est pas/plus pour moi"
+msgstr ""
+
+#: project/profile/form_values.py:223 project/profile/form_values.py:303
+#: project/profile/form_values.py:312
+msgid "oui"
+msgstr ""
+
+#: project/profile/form_values.py:224 project/profile/form_values.py:304
+#: project/profile/form_values.py:311
+msgid "non"
+msgstr ""
+
+#: project/profile/form_values.py:225
+msgid "rien n'est décidé"
+msgstr ""
+
+#: project/profile/form_values.py:230
+msgid "normale"
+msgstr ""
+
+#: project/profile/form_values.py:231
+msgid "sportive"
+msgstr ""
+
+#: project/profile/form_values.py:232
+msgid "mince"
+msgstr ""
+
+#: project/profile/form_values.py:233
+msgid "ronde"
+msgstr ""
+
+#: project/profile/form_values.py:234
+msgid "trapue"
+msgstr ""
+
+#: project/profile/form_values.py:240
+msgid "BCBG"
+msgstr ""
+
+#: project/profile/form_values.py:241
+msgid "branché"
+msgstr ""
+
+#: project/profile/form_values.py:242
+msgid "business"
+msgstr ""
+
+#: project/profile/form_values.py:243
+msgid "classique"
+msgstr ""
+
+#: project/profile/form_values.py:244
+msgid "rock"
+msgstr ""
+
+#: project/profile/form_values.py:245
+msgid "sportif"
+msgstr ""
+
+#: project/profile/form_values.py:246 project/profile/form_values.py:358
+msgid "autre"
+msgstr ""
+
+#: project/profile/form_values.py:252
+msgid "européenne"
+msgstr ""
+
+#: project/profile/form_values.py:253
+msgid "africaine"
+msgstr ""
+
+#: project/profile/form_values.py:254
+msgid "arabe"
+msgstr ""
+
+#: project/profile/form_values.py:255
+msgid "méditerranéenne"
+msgstr ""
+
+#: project/profile/form_values.py:256
+msgid "métisse"
+msgstr ""
+
+#: project/profile/form_values.py:257
+msgid "latine"
+msgstr ""
+
+#: project/profile/form_values.py:258
+msgid "asiatique"
+msgstr ""
+
+#: project/profile/form_values.py:259
+msgid "indienne"
+msgstr ""
+
+#: project/profile/form_values.py:260 project/profile/form_values.py:271
+#: project/profile/form_values.py:281 project/profile/form_values.py:370
+msgid "autres"
+msgstr ""
+
+#: project/profile/form_values.py:265
+msgid "marron"
+msgstr ""
+
+#: project/profile/form_values.py:266
+msgid "bleus"
+msgstr ""
+
+#: project/profile/form_values.py:267
+msgid "noisette"
+msgstr ""
+
+#: project/profile/form_values.py:268
+msgid "gris"
+msgstr ""
+
+#: project/profile/form_values.py:269
+msgid "verts"
+msgstr ""
+
+#: project/profile/form_values.py:270 project/profile/form_values.py:276
+msgid "noirs"
+msgstr ""
+
+#: project/profile/form_values.py:277
+msgid "blancs"
+msgstr ""
+
+#: project/profile/form_values.py:278
+msgid "blonds"
+msgstr ""
+
+#: project/profile/form_values.py:279
+msgid "roux"
+msgstr ""
+
+#: project/profile/form_values.py:280
+msgid "bruns"
+msgstr ""
+
+#: project/profile/form_values.py:286
+msgid "courts"
+msgstr ""
+
+#: project/profile/form_values.py:287
+msgid "longs"
+msgstr ""
+
+#: project/profile/form_values.py:288
+msgid "mi-longs"
+msgstr ""
+
+#: project/profile/form_values.py:289
+msgid "rasés"
+msgstr ""
+
+#: project/profile/form_values.py:290
+msgid "chauve"
+msgstr ""
+
+#: project/profile/form_values.py:295
+msgid "jamais marié"
+msgstr ""
+
+#: project/profile/form_values.py:296
+msgid "séparé"
+msgstr ""
+
+#: project/profile/form_values.py:297
+msgid "divorcé"
+msgstr ""
+
+#: project/profile/form_values.py:298
+msgid "veuf"
+msgstr ""
+
+#: project/profile/form_values.py:305
+msgid "oui, occasionnellement"
+msgstr ""
+
+#: project/profile/form_values.py:306
+msgid "essaye d'arrêter"
+msgstr ""
+
+#: project/profile/form_values.py:317
+msgid "seul"
+msgstr ""
+
+#: project/profile/form_values.py:318
+msgid "en colocation"
+msgstr ""
+
+#: project/profile/form_values.py:319
+msgid "avec mes parents"
+msgstr ""
+
+#: project/profile/form_values.py:324
+msgid "agriculture"
+msgstr ""
+
+#: project/profile/form_values.py:325
+msgid "architecture"
+msgstr ""
+
+#: project/profile/form_values.py:326
+msgid "acteur"
+msgstr ""
+
+#: project/profile/form_values.py:327
+msgid "secteur administratif"
+msgstr ""
+
+#: project/profile/form_values.py:328
+msgid "secteur financier"
+msgstr ""
+
+#: project/profile/form_values.py:329
+msgid "secteur gouvernemental"
+msgstr ""
+
+#: project/profile/form_values.py:330
+msgid "secteur du tourisme"
+msgstr ""
+
+#: project/profile/form_values.py:331
+msgid "secteur de l'ingénierie"
+msgstr ""
+
+#: project/profile/form_values.py:332
+msgid "secteur du marketing"
+msgstr ""
+
+#: project/profile/form_values.py:333
+msgid "informatique"
+msgstr ""
+
+#: project/profile/form_values.py:334
+msgid "logistique"
+msgstr ""
+
+#: project/profile/form_values.py:335
+msgid "docteur"
+msgstr ""
+
+#: project/profile/form_values.py:336
+msgid "professeur"
+msgstr ""
+
+#: project/profile/form_values.py:337
+msgid "infirmière"
+msgstr ""
+
+#: project/profile/form_values.py:338
+msgid "avocat"
+msgstr ""
+
+#: project/profile/form_values.py:339
+msgid "comptable"
+msgstr ""
+
+#: project/profile/form_values.py:340
+msgid "Assistance sociale"
+msgstr ""
+
+#: project/profile/form_values.py:341
+msgid "entrepreneur"
+msgstr ""
+
+#: project/profile/form_values.py:342
+msgid "other"
+msgstr ""
+
+#: project/profile/form_values.py:347
+msgid "agnostique"
+msgstr ""
+
+#: project/profile/form_values.py:348
+msgid "athée"
+msgstr ""
+
+#: project/profile/form_values.py:349
+msgid "bouddhiste"
+msgstr ""
+
+#: project/profile/form_values.py:350
+msgid "catholique"
+msgstr ""
+
+#: project/profile/form_values.py:351
+msgid "chrétien"
+msgstr ""
+
+#: project/profile/form_values.py:352
+msgid "hindouiste"
+msgstr ""
+
+#: project/profile/form_values.py:353
+msgid "israélite"
+msgstr ""
+
+#: project/profile/form_values.py:354
+msgid "musulman"
+msgstr ""
+
+#: project/profile/form_values.py:355
+msgid "orthodoxe"
+msgstr ""
+
+#: project/profile/form_values.py:356
+msgid "protestant"
+msgstr ""
+
+#: project/profile/form_values.py:357
+msgid "spirituel"
+msgstr ""
+
+#: project/profile/form_values.py:359 project/profile/form_values.py:496
+#: project/profile/form_values.py:508
+msgid "je le garde pour moi"
+msgstr ""
+
+#: project/profile/form_values.py:364
+msgid "mange de tout"
+msgstr ""
+
+#: project/profile/form_values.py:365
+msgid "nourriture saine"
+msgstr ""
+
+#: project/profile/form_values.py:366
+msgid "diet"
+msgstr ""
+
+#: project/profile/form_values.py:367
+msgid "végétarien"
+msgstr ""
+
+#: project/profile/form_values.py:368
+msgid "casher"
+msgstr ""
+
+#: project/profile/form_values.py:369
+msgid "hallal"
+msgstr ""
+
+#: project/profile/form_values.py:375
+msgid "chats"
+msgstr ""
+
+#: project/profile/form_values.py:376
+msgid "chiens"
+msgstr ""
+
+#: project/profile/form_values.py:377
+msgid "oiseaux"
+msgstr ""
+
+#: project/profile/form_values.py:378
+msgid "animaux exotiques"
+msgstr ""
+
+#: project/profile/form_values.py:379
+msgid "poissons"
+msgstr ""
+
+#: project/profile/form_values.py:380
+msgid "rongeurs"
+msgstr ""
+
+#: project/profile/form_values.py:381
+msgid "lapins"
+msgstr ""
+
+#: project/profile/form_values.py:382
+msgid "je ne possède pas d'animal"
+msgstr ""
+
+#: project/profile/form_values.py:383
+msgid "autres animaux"
+msgstr ""
+
+#: project/profile/form_values.py:388
+msgid "Mandarin"
+msgstr ""
+
+#: project/profile/form_values.py:390
+msgid "English"
+msgstr ""
+
+#: project/profile/form_values.py:391
+msgid "Hindi"
+msgstr ""
+
+#: project/profile/form_values.py:392
+msgid "Arabic"
+msgstr ""
+
+#: project/profile/form_values.py:394
+msgid "Bengali"
+msgstr ""
+
+#: project/profile/form_values.py:397
+msgid "Punjabi"
+msgstr ""
+
+#: project/profile/form_values.py:399
+msgid "Javanese"
+msgstr ""
+
+#: project/profile/form_values.py:400
+msgid "Wu"
+msgstr ""
+
+#: project/profile/form_values.py:401
+msgid "Malay"
+msgstr ""
+
+#: project/profile/form_values.py:402
+msgid "Telugu"
+msgstr ""
+
+#: project/profile/form_values.py:404
+msgid "Korean"
+msgstr ""
+
+#: project/profile/form_values.py:406
+msgid "Marathi"
+msgstr ""
+
+#: project/profile/form_values.py:407
+msgid "Tamil"
+msgstr ""
+
+#: project/profile/form_values.py:408
+msgid "Urdu"
+msgstr ""
+
+#: project/profile/form_values.py:411
+msgid "Yue"
+msgstr ""
+
+#: project/profile/form_values.py:413
+msgid "Gujarati"
+msgstr ""
+
+#: project/profile/form_values.py:414
+msgid "Jin"
+msgstr ""
+
+#: project/profile/form_values.py:415
+msgid "Southern Min"
+msgstr ""
+
+#: project/profile/form_values.py:416
+msgid "Persian"
+msgstr ""
+
+#: project/profile/form_values.py:418
+msgid "Pashto"
+msgstr ""
+
+#: project/profile/form_values.py:419
+msgid "Kannada"
+msgstr ""
+
+#: project/profile/form_values.py:420
+msgid "Xiang"
+msgstr ""
+
+#: project/profile/form_values.py:421
+msgid "Malayalam"
+msgstr ""
+
+#: project/profile/form_values.py:422
+msgid "Sundanese"
+msgstr ""
+
+#: project/profile/form_values.py:423
+msgid "Hausa"
+msgstr ""
+
+#: project/profile/form_values.py:424
+msgid "Odia"
+msgstr ""
+
+#: project/profile/form_values.py:426
+msgid "Hakka"
+msgstr ""
+
+#: project/profile/form_values.py:428
+msgid "Bhojpuri"
+msgstr ""
+
+#: project/profile/form_values.py:429
+msgid "Tagalog"
+msgstr ""
+
+#: project/profile/form_values.py:430
+msgid "Yoruba"
+msgstr ""
+
+#: project/profile/form_values.py:431
+msgid "Maithili"
+msgstr ""
+
+#: project/profile/form_values.py:432
+msgid "Uzbek"
+msgstr ""
+
+#: project/profile/form_values.py:433
+msgid "Sindhi"
+msgstr ""
+
+#: project/profile/form_values.py:434
+msgid "Amharic"
+msgstr ""
+
+#: project/profile/form_values.py:435
+msgid "Fula"
+msgstr ""
+
+#: project/profile/form_values.py:437
+msgid "Oromo"
+msgstr ""
+
+#: project/profile/form_values.py:438
+msgid "Igbo"
+msgstr ""
+
+#: project/profile/form_values.py:440
+msgid "Awadhi"
+msgstr ""
+
+#: project/profile/form_values.py:441
+msgid "Gan Chinese"
+msgstr ""
+
+#: project/profile/form_values.py:442
+msgid "Cebuano"
+msgstr ""
+
+#: project/profile/form_values.py:444
+msgid "Kurdish"
+msgstr ""
+
+#: project/profile/form_values.py:445
+msgid "Serbo-Croatian"
+msgstr ""
+
+#: project/profile/form_values.py:447
+msgid "Saraiki"
+msgstr ""
+
+#: project/profile/form_values.py:448
+msgid "Nepali"
+msgstr ""
+
+#: project/profile/form_values.py:449
+msgid "Sinhalese"
+msgstr ""
+
+#: project/profile/form_values.py:450
+msgid "Chittagonian"
+msgstr ""
+
+#: project/profile/form_values.py:451
+msgid "Zhuang"
+msgstr ""
+
+#: project/profile/form_values.py:452
+msgid "Khmer"
+msgstr ""
+
+#: project/profile/form_values.py:453
+msgid "Turkmen"
+msgstr ""
+
+#: project/profile/form_values.py:454
+msgid "Assamese"
+msgstr ""
+
+#: project/profile/form_values.py:455
+msgid "Madurese"
+msgstr ""
+
+#: project/profile/form_values.py:457
+msgid "Marwari"
+msgstr ""
+
+#: project/profile/form_values.py:458
+msgid "Magahi"
+msgstr ""
+
+#: project/profile/form_values.py:459
+msgid "Haryanvi"
+msgstr ""
+
+#: project/profile/form_values.py:461
+msgid "Chhattisgarhi"
+msgstr ""
+
+#: project/profile/form_values.py:463
+msgid "Chewa"
+msgstr ""
+
+#: project/profile/form_values.py:464
+msgid "Deccan"
+msgstr ""
+
+#: project/profile/form_values.py:465
+msgid "Akan"
+msgstr ""
+
+#: project/profile/form_values.py:466
+msgid "Kazakh"
+msgstr ""
+
+#: project/profile/form_values.py:467
+msgid "Northern Min"
+msgstr ""
+
+#: project/profile/form_values.py:468
+msgid "Sylheti"
+msgstr ""
+
+#: project/profile/form_values.py:469
+msgid "Zulu"
+msgstr ""
+
+#: project/profile/form_values.py:471
+msgid "Kinyarwanda"
+msgstr ""
+
+#: project/profile/form_values.py:472
+msgid "Dhundhari"
+msgstr ""
+
+#: project/profile/form_values.py:473
+msgid "Haitian Creole"
+msgstr ""
+
+#: project/profile/form_values.py:474
+msgid "Eastern Min"
+msgstr ""
+
+#: project/profile/form_values.py:475
+msgid "Ilocano"
+msgstr ""
+
+#: project/profile/form_values.py:476
+msgid "Quechua"
+msgstr ""
+
+#: project/profile/form_values.py:477
+msgid "Kirundi"
+msgstr ""
+
+#: project/profile/form_values.py:479
+msgid "Hmong"
+msgstr ""
+
+#: project/profile/form_values.py:480
+msgid "Shona"
+msgstr ""
+
+#: project/profile/form_values.py:481
+msgid "Uyghur"
+msgstr ""
+
+#: project/profile/form_values.py:482
+msgid "Hiligaynon/Ilonggo"
+msgstr ""
+
+#: project/profile/form_values.py:483
+msgid "Mossi"
+msgstr ""
+
+#: project/profile/form_values.py:484
+msgid "Xhosa"
+msgstr ""
+
+#: project/profile/form_values.py:486
+msgid "Balochi"
+msgstr ""
+
+#: project/profile/form_values.py:487
+msgid "Konkani"
+msgstr ""
+
+#: project/profile/form_values.py:492
+msgid "études secondaires"
+msgstr ""
+
+#: project/profile/form_values.py:493
+msgid "bachelier"
+msgstr ""
+
+#: project/profile/form_values.py:494
+msgid "master (Licence)"
+msgstr ""
+
+#: project/profile/form_values.py:495
+msgid "doctorat"
+msgstr ""
+
+#: project/profile/form_values.py:501
+msgid "- de 10.000 euros/an"
+msgstr ""
+
+#: project/profile/form_values.py:502
+msgid "de 10 à 20.000 euros/an"
+msgstr ""
+
+#: project/profile/form_values.py:503
+msgid "de 20 à 30.000 euros/an"
+msgstr ""
+
+#: project/profile/form_values.py:504
+msgid "de 30 à 50.000 euros/an"
+msgstr ""
+
+#: project/profile/form_values.py:505
+msgid "de 50 à 75.000 euros/an"
+msgstr ""
+
+#: project/profile/form_values.py:506
+msgid "de 75 à 100.000 euros/an"
+msgstr ""
+
+#: project/profile/form_values.py:507
+msgid "plus de 100.000 euros/an"
+msgstr ""
+
+#: project/profile/forms.py:12
+msgid "Oui"
+msgstr ""
+
+#: project/profile/forms.py:12
+msgid "Non"
+msgstr ""
+
+#: project/profile/forms.py:14
+msgid "Choisissez Chambre"
+msgstr ""
+
+#: project/profile/forms.py:17 project/templates/main/profile.html:48
+#: project/templates/profile/profile.html:26
+msgid "Description"
+msgstr ""
+
+#: project/profile/forms.py:19 project/templates/main/profile.html:115
+#: project/templates/profile/profile.html:93
+msgid "Romantique"
+msgstr ""
+
+#: project/profile/forms.py:23 project/templates/main/profile.html:116
+#: project/templates/profile/profile.html:94
+msgid "Pour moi le mariage c'est"
+msgstr ""
+
+#: project/profile/forms.py:27 project/templates/main/profile.html:117
+#: project/templates/profile/profile.html:95
+msgid "Je veux des enfants"
+msgstr ""
+
+#: project/profile/forms.py:31 project/templates/main/profile.html:120
+#: project/templates/profile/profile.html:98
+msgid "Ma nationalité"
+msgstr ""
+
+#: project/profile/forms.py:35 project/templates/main/profile.html:121
+#: project/templates/profile/profile.html:99
+msgid "Ma taille"
+msgstr ""
+
+#: project/profile/forms.py:38 project/templates/main/profile.html:122
+#: project/templates/profile/profile.html:100
+msgid "Ma silhouette"
+msgstr ""
+
+#: project/profile/forms.py:42 project/templates/main/profile.html:125
+#: project/templates/profile/profile.html:103
+msgid "Mon style"
+msgstr ""
+
+#: project/profile/forms.py:46 project/templates/main/profile.html:126
+#: project/templates/profile/profile.html:104
+msgid "Mon origine"
+msgstr ""
+
+#: project/profile/forms.py:50 project/templates/main/profile.html:127
+#: project/templates/profile/profile.html:105
+msgid "Mes yeux"
+msgstr ""
+
+#: project/profile/forms.py:54 project/templates/main/profile.html:130
+#: project/templates/profile/profile.html:108
+msgid "Mes cheveux"
+msgstr ""
+
+#: project/profile/forms.py:58 project/templates/main/profile.html:131
+#: project/templates/profile/profile.html:109
+msgid "Longueur de mes cheveux"
+msgstr ""
+
+#: project/profile/forms.py:62 project/templates/main/profile.html:132
+#: project/templates/profile/profile.html:110
+msgid "Mon poids"
+msgstr ""
+
+#: project/profile/forms.py:65 project/templates/main/profile.html:135
+#: project/templates/profile/profile.html:113
+msgid "Mon statut marital"
+msgstr ""
+
+#: project/profile/forms.py:69 project/templates/main/profile.html:136
+#: project/templates/profile/profile.html:114
+msgid "Je fume"
+msgstr ""
+
+#: project/profile/forms.py:73 project/templates/main/profile.html:137
+#: project/templates/profile/profile.html:115
+msgid "J'ai des enfants"
+msgstr ""
+
+#: project/profile/forms.py:77 project/templates/main/profile.html:140
+#: project/templates/profile/profile.html:118
+msgid "Je vis"
+msgstr ""
+
+#: project/profile/forms.py:81 project/templates/main/profile.html:141
+#: project/templates/profile/profile.html:119
+msgid "Ma profession"
+msgstr ""
+
+#: project/profile/forms.py:85 project/templates/main/profile.html:142
+#: project/templates/profile/profile.html:120
+msgid "Ma religion"
+msgstr ""
+
+#: project/profile/forms.py:89 project/templates/main/profile.html:145
+#: project/templates/profile/profile.html:123
+msgid "Je mange"
+msgstr ""
+
+#: project/profile/forms.py:93 project/templates/main/profile.html:146
+#: project/templates/profile/profile.html:124
+msgid "Mes animaux de compagnie"
+msgstr ""
+
+#: project/profile/forms.py:97 project/templates/main/profile.html:147
+#: project/templates/profile/profile.html:125
+msgid "Je parle"
+msgstr ""
+
+#: project/profile/forms.py:101 project/templates/main/profile.html:150
+#: project/templates/profile/profile.html:128
+msgid "Quelles études avez-vous faites?"
+msgstr ""
+
+#: project/profile/forms.py:105 project/templates/main/profile.html:151
+#: project/templates/profile/profile.html:129
+msgid "Mes revenus"
+msgstr ""
+
+#: project/profile/forms.py:109
+msgid ""
+"Votre slogan: Une devise, une citation, exprimez en une phrase votre "
+"personnalité."
+msgstr ""
+
+#: project/profile/forms.py:112
+msgid "Premier rendez-vous: Décrivez le premier rendez-vous parfait."
+msgstr ""
+
+#: project/profile/forms.py:115
+msgid "Qualités: Dites-nous vos points forts."
+msgstr ""
+
+#: project/profile/forms.py:118
+msgid "Défauts: Que doit-on redouter chez vous ?"
+msgstr ""
+
+#: project/profile/forms.py:121
+msgid "Rêves: Parlez-nous de vos aspirations."
+msgstr ""
+
+#: project/profile/forms.py:124
+msgid "Amour: Comment définiriez-vous ce grand concept ?"
+msgstr ""
+
+#: project/profile/forms.py:127
+msgid "Partenaire: Comment vous le/la voyez ?"
+msgstr ""
+
+#: project/profile/forms.py:130
+msgid "Loisirs: Comment occupez-vous vos temps libres ?"
+msgstr ""
+
+#: project/profile/forms.py:133
+msgid "Amis: Ils sont importants pour vous ?"
+msgstr ""
+
+#: project/profile/forms.py:136
+msgid "Expérience forte: Racontez un évènement qui vous a marqué."
+msgstr ""
+
+#: project/profile/forms.py:139
+msgid "Boulot: Il occupe quelle place dans votre vie ?"
+msgstr ""
+
+#: project/profile/forms.py:142
+msgid "Animaux: Pour vous, c’est un plus ou bof ?"
+msgstr ""
+
+#: project/profile/forms.py:144
+msgid "Enfants: Pour vous, c’est une force ?"
+msgstr ""
+
+#: project/profile/forms.py:147
+msgid "Avenir: Vous vous voyez où dans 20 ans ? (Et avec qui ?)"
+msgstr ""
+
+#: project/profile/forms.py:150
+msgid "Fierté: Qu’est-ce qui vous fait briller en société ?"
+msgstr ""
+
+#: project/profile/forms.py:153
+msgid "Culture: Vous y attachez de l’importance ?"
+msgstr ""
+
+#: project/profile/forms.py:156
+msgid "Malaise: Il doit bien y avoir un petit truc qui vous dérange dans la vie."
+msgstr ""
+
+#: project/profile/forms.py:159
+msgid "Sorties: Qu’est-ce qui vous fait sortir de chez vous ?"
+msgstr ""
+
+#: project/profile/forms.py:162
+msgid ""
+"Voyages: Vous avez envie d’évasion en ce moment ? Quelles destinations "
+"vous attirent ?"
+msgstr ""
+
+#: project/profile/forms.py:165
+msgid "Addictions: De quoi avez-vous du mal à vous passer ?"
+msgstr ""
+
+#: project/profile/forms.py:168
+msgid "Passions: Qu’est-ce qui vous fait vibrer ?"
+msgstr ""
+
+#: project/profile/forms.py:174 project/templates/profile/profile.html:9
+#: project/templates/profile/profile.html:14
+msgid "Ajouter un photo"
+msgstr ""
+
+#: project/profile/forms.py:179
+msgid "Votre nom complet"
+msgstr ""
+
+#: project/profile/forms.py:181
+msgid "Rue, N°"
+msgstr ""
+
+#: project/profile/forms.py:183
+msgid "Code postal"
+msgstr ""
+
+#: project/profile/forms.py:185
+msgid "Téléphone"
+msgstr ""
+
+#: project/profile/forms.py:187
+msgid "Pays"
+msgstr ""
+
+#: project/templates/layout.html:27 project/templates/user/register.html:265
+msgid "Conditions générales d'utilisation C.G.U"
+msgstr ""
+
+#: project/templates/layout.html:27 project/templates/user/register.html:265
+msgid "Politique de confidentialité"
+msgstr ""
+
+#: project/templates/layout.html:27 project/templates/user/register.html:265
+msgid "Mentions légales"
+msgstr ""
+
+#: project/templates/layout.html:30 project/templates/user/register.html:268
+msgid "Tous les droits sont réservés"
+msgstr ""
+
+#: project/templates/nav.html:12 project/templates/user/register.html:28
+msgid "À propos"
+msgstr ""
+
+#: project/templates/nav.html:14
+msgid "Déjà membre"
+msgstr ""
+
+#: project/templates/nav.html:16 project/templates/user/register.html:32
+msgid "Blog"
+msgstr ""
+
+#: project/templates/nav.html:17 project/templates/user/register.html:33
+msgid "Contact"
+msgstr ""
+
+#: project/templates/social.html:6 project/templates/user/register.html:239
+msgid "Disponible"
+msgstr ""
+
+#: project/templates/social.html:15 project/templates/user/register.html:248
+msgid "Partger"
+msgstr ""
+
+#: project/templates/user_nav.html:4
+msgid "Profil"
+msgstr ""
+
+#: project/templates/user_nav.html:5
+msgid "Messages"
+msgstr ""
+
+#: project/templates/user_nav.html:6
+msgid "En Ligne"
+msgstr ""
+
+#: project/templates/main/search.html:34 project/templates/user_nav.html:7
+msgid "Recherche"
+msgstr ""
+
+#: project/templates/user_nav.html:8
+msgid "Visit"
+msgstr ""
+
+#: project/templates/user_nav.html:10
+msgid "préférence"
+msgstr ""
+
+#: project/templates/user_nav.html:11
+msgid "Déconnexion"
+msgstr ""
+
+#: project/templates/chat/dialogue.html:20
+msgid "Chat avec"
+msgstr ""
+
+#: project/templates/chat/dialogue.html:30
+msgid "tapez votre message ici"
+msgstr ""
+
+#: project/templates/chat/dialogue.html:32
+#: project/templates/main/contact.html:19
+#: project/templates/report/alert-administrator.html:17
+msgid "Envoyer"
+msgstr ""
+
+#: project/templates/chat/dialogue.html:33
+msgid "Effacer"
+msgstr ""
+
+#: project/templates/main/_cc_form.html:4
+#: project/templates/subscription/checkout.html:10
+msgid "Carte de crédit ou Carte de débit"
+msgstr ""
+
+#: project/templates/main/_cc_form.html:13
+msgid "Mise à jour"
+msgstr ""
+
+#: project/templates/main/about.html:6
+msgid "À propos de Yes To Meet You."
+msgstr ""
+
+#: project/templates/main/about.html:7
+msgid ""
+"Yes To Meet You est un site de rencontres différent des autres. Tout y "
+"est conçu pour favoriser l’échange dans le respect mutuel. À l’heure où "
+"tout va plus vite, où tout se consomme et se consume, c’est bon de "
+"prendre son temps."
+msgstr ""
+
+#: project/templates/main/about.html:11
+msgid "Concrètement, Yes To Meet You, c’est quoi ?"
+msgstr ""
+
+#: project/templates/main/about.html:12
+msgid "2 espaces de rencontre."
+msgstr ""
+
+#: project/templates/main/about.html:13
+msgid "1 forum pour vous exprimer."
+msgstr ""
+
+#: project/templates/main/about.html:14 project/templates/main/about.html:33
+msgid "Des cadeaux réels."
+msgstr ""
+
+#: project/templates/main/about.html:15 project/templates/main/about.html:43
+msgid "Des photos de qualité."
+msgstr ""
+
+#: project/templates/main/about.html:19
+msgid "2 salles, 2 ambiances."
+msgstr ""
+
+#: project/templates/main/about.html:20
+msgid "Vous disposez de deux espaces de rencontre."
+msgstr ""
+
+#: project/templates/main/about.html:21
+msgid ""
+"vous permet de dialoguer sans montrer vos photos. Elles n’apparaitront "
+"qu’après 10 ou 20 échanges de messages. C’est vous qui décidez ! place à "
+"la beauté intérieure."
+msgstr ""
+
+#: project/templates/main/about.html:22
+msgid ""
+"vous permet de rencontrer des célibataires sympas de façon simple et "
+"directe."
+msgstr ""
+
+#: project/templates/main/about.html:26
+#: project/templates/user/register.html:177
+msgid "What About You ?"
+msgstr ""
+
+#: project/templates/main/about.html:27
+msgid ""
+"Sur Yes To Meet You, le plus important, c’est vous et votre personnalité."
+" C’est pourquoi nous avons imaginé un espace dans lequel nous vous "
+"invitons à exprimer vos idées. Un forum convivial sur lequel vous pouvez "
+"réagir et où les autres membres peuvent se faire une idée des richesses "
+"de votre personnalité."
+msgstr ""
+
+#: project/templates/main/about.html:38
+msgid ""
+"On aime tous recevoir de petites attentions. C’est la preuve que l’autre "
+"s’intéresse à vous. C’est pourquoi, sur Yes To Meet You, les cadeaux sont"
+" bien réels. Offrez des fleurs ou des chocolat à l’élu de votre cœur en "
+"toute simplicité."
+msgstr ""
+
+#: project/templates/main/about.html:48
+msgid ""
+"Même si ce n’est pas le physique qui compte, une belle photo peut "
+"renforcer votre attractivité. C’est pourquoi, Yes To Meet You vous met en"
+" relation avec des photographes professionnels. Ils vous aideront à "
+"révéler extérieurement votre beauté intérieure."
+msgstr ""
+
+#: project/templates/main/about.html:57
+msgid "Convaincu ? Inscrivez-vous vite. C’est gratuit !"
+msgstr ""
+
+#: project/templates/main/about.html:58
+msgid "Inscrivez-vous"
+msgstr ""
+
+#: project/templates/main/blog.html:13
+msgid "lire suite"
+msgstr ""
+
+#: project/templates/main/confirm.html:9
+msgid ""
+"nous avons bien reçu votre message. Nous vous contacterons des que "
+"possible"
+msgstr ""
+
+#: project/templates/main/contact.html:11
+msgid "Contacter"
+msgstr ""
+
+#: project/templates/main/items.html:8
+msgid "YES ! Vous allez marquer des points !"
+msgstr ""
+
+#: project/templates/main/items.html:9
+msgid "Vous voulez gâter"
+msgstr ""
+
+#: project/templates/main/items.html:9
+msgid "? Bonne idée ! C’est le petit plus qui s’ajoute à l’écoute et au dialogue."
+msgstr ""
+
+#: project/templates/main/items.html:10
+msgid ""
+"Suivez les instructions de paiement ci-dessous. À partir de votre "
+"paiement, votre commande sera traitée par Yes To Meet You."
+msgstr ""
+
+#: project/templates/main/items.html:11 project/templates/main/send.html:8
+msgid "Important : un délai de 48 heures est possible avant que"
+msgstr ""
+
+#: project/templates/main/items.html:11 project/templates/main/send.html:8
+msgid "reçoive son cadeau."
+msgstr ""
+
+#: project/templates/main/items.html:18 project/templates/main/items.html:30
+#: project/templates/main/items.html:31
+msgid "Chocolat"
+msgstr ""
+
+#: project/templates/main/items.html:22 project/templates/main/items.html:48
+msgid "Prix"
+msgstr ""
+
+#: project/templates/main/items.html:44 project/templates/main/items.html:56
+#: project/templates/main/items.html:57
+msgid "Fleur"
+msgstr ""
+
+#: project/templates/main/my_account.html:9
+msgid "Mes donnés"
+msgstr ""
+
+#: project/templates/main/my_account.html:11 project/user/forms.py:54
+#: project/user/forms.py:56
+msgid "Adresse Email"
+msgstr ""
+
+#: project/templates/main/my_account.html:13
+msgid ""
+"Vous n'avez pas confirmé votre compte. Merci de confirmer votre adresse "
+"e-mail"
+msgstr ""
+
+#: project/templates/main/my_account.html:17
+msgid "Modifier votre mots de passe"
+msgstr ""
+
+#: project/templates/main/my_account.html:20
+msgid "Block Liste"
+msgstr ""
+
+#: project/templates/main/my_account.html:24
+msgid "Je ne veux plus recevoir de cadeau."
+msgstr ""
+
+#: project/templates/main/my_account.html:28
+msgid "J'aimerais recevoir des cadeaux."
+msgstr ""
+
+#: project/templates/main/my_account.html:33
+msgid "Mettez à jour votre adresse"
+msgstr ""
+
+#: project/templates/main/my_account.html:37
+msgid "Ajoutez votre adresse"
+msgstr ""
+
+#: project/templates/main/my_account.html:45
+msgid "Mon abonnement"
+msgstr ""
+
+#: project/templates/main/my_account.html:48
+msgid "Plan d'abonnement"
+msgstr ""
+
+#: project/templates/main/my_account.html:49
+msgid "Expire à"
+msgstr ""
+
+#: project/templates/main/my_account.html:50
+msgid "Annuler l'abonnement"
+msgstr ""
+
+#: project/templates/main/my_account.html:56
+msgid "Pas d'abonnement actif!"
+msgstr ""
+
+#: project/templates/main/my_account.html:57
+msgid "je m'abonne"
+msgstr ""
+
+#: project/templates/main/profile.html:20
+msgid "Envoyer un message"
+msgstr ""
+
+#: project/templates/main/profile.html:36
+msgid "Bloquer ce membre"
+msgstr ""
+
+#: project/templates/main/profile.html:41
+#: project/templates/report/alert-administrator.html:8
+msgid "Alerter le modérateur"
+msgstr ""
+
+#: project/templates/main/profile.html:51
+#: project/templates/profile/profile.html:29
+msgid "Votre slogan"
+msgstr ""
+
+#: project/templates/main/profile.html:54
+#: project/templates/profile/profile.html:32
+msgid "Premier rendez-vous"
+msgstr ""
+
+#: project/templates/main/profile.html:57
+#: project/templates/profile/profile.html:35
+msgid "Qualités"
+msgstr ""
+
+#: project/templates/main/profile.html:60
+#: project/templates/profile/profile.html:38
+msgid "Défauts"
+msgstr ""
+
+#: project/templates/main/profile.html:63
+#: project/templates/profile/profile.html:41
+msgid "Rêves"
+msgstr ""
+
+#: project/templates/main/profile.html:66
+#: project/templates/profile/profile.html:44
+msgid "Amour"
+msgstr ""
+
+#: project/templates/main/profile.html:69
+#: project/templates/profile/profile.html:47
+msgid "Partenaire"
+msgstr ""
+
+#: project/templates/main/profile.html:72
+#: project/templates/profile/profile.html:50
+msgid "Loisirs"
+msgstr ""
+
+#: project/templates/main/profile.html:75
+#: project/templates/profile/profile.html:53
+msgid "Amis"
+msgstr ""
+
+#: project/templates/main/profile.html:78
+#: project/templates/profile/profile.html:56
+msgid "Expérience forte"
+msgstr ""
+
+#: project/templates/main/profile.html:81
+#: project/templates/profile/profile.html:59
+msgid "Boulot"
+msgstr ""
+
+#: project/templates/main/profile.html:84
+#: project/templates/profile/profile.html:62
+msgid "Animaux"
+msgstr ""
+
+#: project/templates/main/profile.html:87
+#: project/templates/profile/profile.html:65
+msgid "Enfants"
+msgstr ""
+
+#: project/templates/main/profile.html:90
+#: project/templates/profile/profile.html:68
+msgid "Avenir"
+msgstr ""
+
+#: project/templates/main/profile.html:93
+#: project/templates/profile/profile.html:71
+msgid "Fierté"
+msgstr ""
+
+#: project/templates/main/profile.html:96
+#: project/templates/profile/profile.html:74
+msgid "Culture"
+msgstr ""
+
+#: project/templates/main/profile.html:99
+#: project/templates/profile/profile.html:77
+msgid "Malaise"
+msgstr ""
+
+#: project/templates/main/profile.html:102
+#: project/templates/profile/profile.html:80
+msgid "Sorties"
+msgstr ""
+
+#: project/templates/main/profile.html:105
+#: project/templates/profile/profile.html:83
+msgid "Voyages"
+msgstr ""
+
+#: project/templates/main/profile.html:108
+#: project/templates/profile/profile.html:86
+msgid "Addictions"
+msgstr ""
+
+#: project/templates/main/profile.html:111
+#: project/templates/profile/profile.html:89
+msgid "Passions"
+msgstr ""
+
+#: project/templates/main/profile.html:158
+#: project/templates/profile/profile.html:143
+msgid "Faire une surprise."
+msgstr ""
+
+#: project/templates/main/profile.html:159
+#: project/templates/profile/profile.html:144
+msgid "Envoyez un vrai cadeau"
+msgstr ""
+
+#: project/templates/main/profile.html:160
+#: project/templates/profile/profile.html:145
+msgid ""
+"Une surprise, ça fait toujours plaisir. Epatez l’élu de votre cœur en lui"
+" envoyant des fleurs ou des chocolats en vrai."
+msgstr ""
+
+#: project/templates/main/profile.html:164
+#: project/templates/profile/profile.html:149
+msgid "Envoyer un cadeau"
+msgstr ""
+
+#: project/templates/main/search.html:14
+msgid "Age"
+msgstr ""
+
+#: project/templates/main/send.html:6
+msgid "Confirmation de paiement"
+msgstr ""
+
+#: project/templates/main/send.html:7
+msgid "Nous avons bien reçu votre commande."
+msgstr ""
+
+#: project/templates/main/visit.html:29
+msgid "Personne n'a visité votre profil"
+msgstr ""
+
+#: project/templates/profile/address.html:11
+msgid "Ajouter votre adresse"
+msgstr ""
+
+#: project/templates/profile/address.html:13
+#: project/templates/profile/edit-profile.html:134
+#: project/templates/profile/new-profile.html:134
+msgid ""
+"En acceptant, vous acceptez les conditions et procédures de Yes To Meet "
+"You. Si quelqu’un vous offre des fleurs ou des chocolats, le site vous "
+"contactera par e-mail ou par téléphone afin d’obtenir votre accord et de "
+"confirmer les données de livraison. (Elles peuvent être différentes de "
+"votre adresse d’inscription.)"
+msgstr ""
+
+#: project/templates/profile/address.html:14
+#: project/templates/profile/edit-profile.html:135
+#: project/templates/profile/new-profile.html:135
+msgid "Vos coordonnées ne seront en aucun cas transmises à des tiers."
+msgstr ""
+
+#: project/templates/profile/address.html:25
+msgid "Ajouter"
+msgstr ""
+
+#: project/templates/profile/edit-profile.html:9
+#: project/templates/profile/edit-profile.html:138
+#: project/templates/profile/profile.html:139
+msgid "Éditer mon profil"
+msgstr ""
+
+#: project/templates/profile/edit-profile.html:11
+#: project/templates/profile/new-profile.html:11
+msgid "YES ! Enfin un site où on existe par sa personnalité."
+msgstr ""
+
+#: project/templates/profile/edit-profile.html:12
+#: project/templates/profile/new-profile.html:12
+msgid ""
+"Sur « Yes To Meet You » le dialogue et l’échange sont très importants. Et"
+" pour bien communiquer, il faut pouvoir se faire une idée de l’autre."
+msgstr ""
+
+#: project/templates/profile/edit-profile.html:13
+#: project/templates/profile/new-profile.html:13
+msgid ""
+"C’est pour cette raison que nous vous demandons de répondre à toutes les "
+"questions. (Minimum 50 caractères.)"
+msgstr ""
+
+#: project/templates/profile/edit-profile.html:119
+#: project/templates/profile/new-profile.html:119
+msgid "Je suis d’accord de recevoir des fleurs ou des chocolats"
+msgstr ""
+
+#: project/templates/profile/edit-profile.html:119
+#: project/templates/profile/new-profile.html:119
+msgid "offerts par des membres de Yes To Meet You."
+msgstr ""
+
+#: project/templates/profile/new-profile.html:9
+#: project/templates/profile/new-profile.html:139
+msgid "Créer mon profil"
+msgstr ""
+
+#: project/templates/profile/profile.html:18
+msgid "Une photo à votre image."
+msgstr ""
+
+#: project/templates/profile/profile.html:19
+msgid "Sublimez votre profil."
+msgstr ""
+
+#: project/templates/profile/profile.html:20
+msgid ""
+"Une mauvaise photo peut tout gâcher. Trouvez facilement le photographe "
+"qui révèlera au monde votre beauté intérieure."
+msgstr ""
+
+#: project/templates/profile/profile.html:21
+msgid "Chercher un photographe"
+msgstr ""
+
+#: project/templates/profile/profile.html:134
+msgid "messages"
+msgstr ""
+
+#: project/templates/profile/profile.html:134
+msgid "Visits"
+msgstr ""
+
+#: project/templates/profile/profile.html:138
+msgid "Bienvenue"
+msgstr ""
+
+#: project/templates/report/blocklist.html:24
+msgid "Débloquer"
+msgstr ""
+
+#: project/templates/report/blocklist.html:30
+msgid "Vous n'avez encore bloqué aucun membre"
+msgstr ""
+
+#: project/templates/subscription/checkout.html:20
+msgid "Payer"
+msgstr ""
+
+#: project/templates/subscription/plans.html:6
+msgid "REJOIGNEZ-NOUS"
+msgstr ""
+
+#: project/templates/subscription/plans.html:7
+msgid "C’est gratuit jusqu’en ! MARS 2018"
+msgstr ""
+
+#: project/templates/subscription/plans.html:12
+msgid "XX,XX €1/mois"
+msgstr ""
+
+#: project/templates/subscription/plans.html:13
+msgid "XX,XX €1/mois si vous souhaitez renouveler tous les mois votre abonnement."
+msgstr ""
+
+#: project/templates/subscription/plans.html:16
+#: project/templates/subscription/plans.html:27
+#: project/templates/subscription/plans.html:38
+msgid "Abonnez-vous !"
+msgstr ""
+
+#: project/templates/subscription/plans.html:23
+msgid "XX,XX €3/mois"
+msgstr ""
+
+#: project/templates/subscription/plans.html:24
+msgid ""
+"XX,XX €3/mois si vous vous engagez pour 3 mois. (Oui, c’est important "
+"l’engagement !)"
+msgstr ""
+
+#: project/templates/subscription/plans.html:34
+msgid "XX,XX €6/mois"
+msgstr ""
+
+#: project/templates/subscription/plans.html:35
+msgid ""
+"XX,XX €6/mois si vous vous engagez pour 6 mois. (Ça c’est de l’engagement"
+" !)"
+msgstr ""
+
+#: project/templates/user/forgot.html:10
+msgid "Réinitialiser le mot de passe\n"
+msgstr ""
+
+#: project/templates/user/forgot.html:17
+msgid "Réinitialiser"
+msgstr ""
+
+#: project/templates/user/login.html:9
+msgid "Se connecter"
+msgstr ""
+
+#: project/templates/user/login.html:19
+msgid "Mots de passe oublié?"
+msgstr ""
+
+#: project/templates/user/register.html:30
+msgid "Déjà membre?"
+msgstr ""
+
+#: project/templates/user/register.html:117
+msgid ""
+"Je certifie être majeur(e), j’ai lu et j’accepte les CGU, la politique "
+"sur la vie privée de yestomeetyou et services décrits"
+msgstr ""
+
+#: project/templates/user/register.html:149
+msgid "Yes To Take Time"
+msgstr ""
+
+#: project/templates/user/register.html:150
+msgid ""
+"Un concept unique : Faites des rencontres sans montrer vos photos. Elles "
+"n’apparaîtront qu’après 10 ou 20 échanges de messages."
+msgstr ""
+
+#: project/templates/user/register.html:151
+#: project/templates/user/register.html:165
+#: project/templates/user/register.html:179
+#: project/templates/user/register.html:196
+msgid "Lire la suite"
+msgstr ""
+
+#: project/templates/user/register.html:163
+msgid "Yes To Be Direct"
+msgstr ""
+
+#: project/templates/user/register.html:164
+msgid "Des échanges simples et directs pour trouver la bonne personne."
+msgstr ""
+
+#: project/templates/user/register.html:178
+msgid ""
+"Cet espace est dédié à votre personnalité. Exprimez vos idées pour "
+"révéler votre caractère."
+msgstr ""
+
+#: project/templates/user/register.html:192
+msgid "Découvrez le Slow Love"
+msgstr ""
+
+#: project/templates/user/register.html:194
+msgid ""
+"Yes To Meet You est un site de rencontres différent des autres. Notre "
+"approche Slow Love vous invite à prendre votre temps pour trouver "
+"l’amour.Rien ne presse. Révélez-vous progressivement. Vous avez tellement"
+" plus à offrir qu’une image superficielle. Sur ce site, tout est conçu "
+"pour favoriser l’échange dans le respect mutuel. À l’heure où tout va "
+"plus vite, où tout se consomme et se consume, c’est bon de prendre son "
+"temps."
+msgstr ""
+
+#: project/templates/user/register.html:195
+msgid ""
+"Inscrivez-vous vite et (re)découvrez l’amour comme au temps où l’on "
+"savait s’aimer."
+msgstr ""
+
+#: project/templates/user/register.html:214
+msgid "Qu’est-ce qui vous attend sur Yes To Meet You ?"
+msgstr ""
+
+#: project/templates/user/register.html:217
+msgid "L’espace Yes To Take Time."
+msgstr ""
+
+#: project/templates/user/register.html:218
+msgid ""
+"Un lieu où l’on se rencontre et où l’on prend le temps de se connaître "
+"avant de se révéler. Votre photo n’apparaitra qu’après 10 ou 20 échanges "
+"avec votre prétendant(e).L’espace Yes to Be Direct.Un lieu d’échanges "
+"simples et directs pour rencontrer des célibataires sympas.Cadeaux "
+"réels.On aime tous être gâté. Offrez et recevez des fleurs ou des "
+"chocolats en vrai.Photos de qualité.Trouvez grâce à ce site des "
+"photographes professionnels pour optimiser votre profil.What about you ? "
+"Un forum pour exprimer vos idées et révéler votre personnalité aux autres"
+" membres."
+msgstr ""
+
+#: project/templates/user/register.html:225
+msgid "Confidentialité"
+msgstr ""
+
+#: project/templates/user/register.html:227
+msgid ""
+"Yes To Meet You garantit un respect total de vos données personnelles. "
+"Elles seront conservées en toute sécurité. Elles ne seront ni vendues, ni"
+" échangées sans un accord préalable de votre part. Vos coordonnées ne "
+"seront en aucun cas transmises  à d’autres utilisateurs du site."
+msgstr ""
+
+#: project/templates/user/update_password.html:7
+#: project/templates/user/update_password.html:37
+msgid "Changer mots de passe"
+msgstr ""
+
+#: project/user/forms.py:36 project/user/forms.py:39
+msgid "Date de naissance"
+msgstr ""
+
+#: project/user/forms.py:41
+msgid "Je suis"
+msgstr ""
+
+#: project/user/forms.py:45
+msgid "cherchant"
+msgstr ""
+
+#: project/user/forms.py:50 project/user/forms.py:52
+msgid "Pseudo"
+msgstr ""
+
+#: project/user/forms.py:58
+msgid "Mot de passe"
+msgstr ""
+
+#: project/user/forms.py:64
+msgid "6 caractères alphanumériques minimum"
+msgstr ""
+
+#: project/user/forms.py:65
+msgid "Confirmation de mot de passe"
+msgstr ""
+
+#: project/user/forms.py:67
+msgid "Agree"
+msgstr ""
+
+#: project/user/forms.py:68
+msgid "Je m'inscris"
+msgstr ""
+

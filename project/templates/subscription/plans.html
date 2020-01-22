@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <section class="section">
+      <article class="content">
+        <h2>{{ _('REJOIGNEZ-NOUS') }}</h2>
+        <p><strong>{{ _('Profitez-en, Yes To Meet You est gratuit jusqu’en avril 2018.') }}</strong></p>
+      </article>
+      <div class="columns">
+        <div class="column is-one-third ">
+          <article class="content">
+            <h3 class="title">{{ _('XX,XX €1/mois') }}</h3>
+            <h4>{{ _('XX,XX €1/mois si vous souhaitez renouveler tous les mois votre abonnement.') }}</h4>
+            <!-- <form action="/checkout" method="">
+              <input type="hidden" name="plan" value="basic">
+              <button type="submit" class="button">{{ _('Abonnez-vous !')}}</button>
+            </form> -->
+          </article>
+        </div>
+
+        <div class="column is-one-third box">
+          <article class="content">
+            <h3>{{ _('XX,XX €3/mois') }}</h3>
+            <h4>{{ _('XX,XX €3/mois si vous vous engagez pour 3 mois. (Oui, c’est important l’engagement !)') }}</h4>
+            <!-- <form action="/checkout" method="">
+              <input type="hidden" name="plan" value="silver">
+              <button type="submit" class="button">{{ _('Abonnez-vous !')}}</button>
+            </form> -->
+          </article>
+        </div>
+
+        <div class="column is-one-third ">
+          <article class="content">
+            <h3>{{ _('XX,XX €6/mois') }}</h3>
+            <h4>{{ _('XX,XX €6/mois si vous vous engagez pour 6 mois. (Ça c’est de l’engagement !)') }}</h4>
+            <!-- <form action="/checkout" method="">
+              <input type="hidden" name="plan" value="gold">
+              <button type="submit" class="button" >{{ _('Abonnez-vous !')}}</button>
+            </form> -->
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+{% endblock %}

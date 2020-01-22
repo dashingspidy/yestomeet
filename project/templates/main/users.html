@@ -1,0 +1,51 @@
+{% extends 'layout.html' %}
+
+{% block title %}Membre{% endblock %}
+
+{% block content %}
+    {% if dsc %}<h3 style="margin-top: 0.5rem;">{{dsc}}</h3>{% endif %}
+    
+    <div class="columns is-multiline is-mobile users_list">
+    {% if users != None %}
+        {% for user in users %}
+                <div class="column is-one-quarter-desktop is-half-mobile mbl-user">
+                <div class="card">
+                    {% for photo in user.photos %}
+                        {% if photo.default and not photo.private %}
+                        <div class="card-photo">
+                            <figure class="image is-4by3">
+                                <img src="http://yestomeet.s3.amazonaws.com/{{photo.url}}" width="300">
+                            </figure>
+                            </div>
+                        {% endif%}
+                    {% endfor %}
+                    {% for photo in user.photos[:1] %}
+                        {% if photo.private %}
+                            {% if user.gender == 'men'%}
+                                <figure class="image is-4by3">
+                                    <img src="../static/img/home-ano.svg" width="300">
+                                </figure>
+                            {% elif user.gender == 'women'%}
+                                <figure class="image is-4by3">
+                                    <img src="../static/img/femme-ano.svg" width="300">
+                                </figure>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}                  
+                    <div class="card-content">
+                        <div class="media-content">
+                            <p class="title is-4"><a class="text-red" href="{{url_for('main.profile',username=user.username)}}">{{ user.username}}</a>
+                            {% if user.online == True %}
+                                <i class="fa fa-circle fa-lg" style="color:green"></i>
+                            {% endif %}
+                            </p>
+                            <p class="subtitle is-6">{{ age(user.birthdate) }} {{ _('ans')}} | {{ user.location }}</p>
+                        </div>
+                    </div>       
+                </div>
+                </div>
+        {% endfor %}
+    {% else %}
+    {% endif %}
+    </div>
+{% endblock %}

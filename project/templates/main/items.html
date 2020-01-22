@@ -1,0 +1,78 @@
+{% extends 'layout.html' %}
+
+
+{% block title %}cadeaux{% endblock %}
+{% block content %}
+      
+    <section class="container">
+      <article class="section">
+        <div class="content">
+          <h3>{{ _('YES ! Vous allez marquer des points !') }}</h3>
+          <p>{{ _('Vous voulez gâter')}} <strong>{{user.username}}</strong> {{ _('? Bonne idée ! C’est le petit plus qui s’ajoute à l’écoute et au dialogue.')}}</p>
+          <p>{{ _('Suivez les instructions de paiement ci-dessous. À partir de votre paiement, votre commande sera traitée par Yes To Meet You.')}} </p>
+          <p>{{ _('<strong>Important</strong> : Le site Yes To Meet You s’engage à tout mettre en œuvre pour fournir ses services dans les meilleures conditions et dans les plus brefs délais')}}</p>
+        </div>
+      </article>
+
+      <div class="columns">
+        <div class="column is-half">
+          <article class="content">
+              <h3 class="title">{{ _('Chocolat')}}</h3>
+              <figure class="image is-3by2">
+                <img src="../static/img/choclat.jpg" alt="Chocolat">
+              </figure>  
+              <!-- <p class="subtitle">{{_('Prix')}}: &euro; 5</p> -->
+              <!-- <form action="/gift_charge" method="POST">
+                <input type="hidden" name="amount" value="500">
+                <input type="hidden" name="user" value="{{receiver}}">
+                <script
+                  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                  data-key="pk_test_3kCtgnOdq0e3Dmprk1tHUVmi"
+                  data-amount="500"
+                  data-name="{{ _('Chocolat')}}"
+                  data-description="{{ _('Chocolat')}}"
+                  data-email="{{current_user.email}}"
+                  data-allow-remember-me=false
+                  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                  data-locale="auto"
+                  data-billing-address="true"
+                  data-currency="eur">
+                </script>
+            </form> -->
+
+          </article>
+        </div>
+        <div class="column is-half">
+          <article class="content">
+              <h3 class="title">{{ _('Fleur')}}</h3>
+              <figure class="image is-3by2">
+                <img src="../static/img/fleure.jpg" alt="Fleur">
+              </figure>  
+              <!-- <p class="subtitle">{{_('Prix')}}: &euro; 5</p> -->
+              <!-- <form action="/gift_charge" method="POST">
+                <input type="hidden" name="amount" value="500">
+                <input type="hidden" name="user" value="{{receiver}}">
+                <script
+                  src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                  data-key="pk_test_3kCtgnOdq0e3Dmprk1tHUVmi"
+                  data-amount="500"
+                  data-name="{{ _('Fleur')}}"
+                  data-description="{{ _('Fleur')}}"
+                  data-email="{{current_user.email}}"
+                  data-allow-remember-me=false
+                  data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+                  data-locale="auto"
+                  data-billing-address="true"
+                  data-currency="eur">
+                </script>
+            </form> -->
+          </article>
+        </div>
+      </div>
+
+      <article>
+        <p>{{ _('Ce service ne sera disponible que dans quelques semaines.')}}</p>
+        <p>{{ _('Pour une fois, vous avez une bonne excuse pour ne pas offrir de fleurs. ;-)')}}</p>
+      </article>
+    </section>
+{% endblock %}

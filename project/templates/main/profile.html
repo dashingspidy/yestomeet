@@ -1,0 +1,197 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="columns">
+        <div class="column is-one-quarter">
+            <section class="section">
+                {% if photos %}
+                    {% for p in photos %}
+                        {% if p.default %}
+                            <figure class="image is-3by2">
+                                <img src="http://yestomeetyou.s3.amazonaws.com/{{p.url}}">
+                            </figure>
+                         {% endif %}
+                    {% endfor %}
+                    <div class="columns is-multiline is-mobile" style="margin-top: .75rem;">
+                        {% for p in photos %}
+                            <div class="column is-one-quarter">
+                                <figure>
+                                    <a data-fancybox="gallery" href="http://yestomeetyou.s3.amazonaws.com/{{p.url}}">
+                                                <img src="http://yestomeetyou.s3.amazonaws.com/{{p.url}}">
+                                            </a>
+                                </figure>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% else %}
+                    <figure class="image is-3by2">
+                        {% if user.gender == 'men' %}
+                        <img src="../static/img/home-ano.svg">
+                        {% else %}
+                            <img src="../static/img/femme-ano.svg">
+                        {% endif %}
+                    </figure>            
+                {% endif %}  
+            </section>
+
+            <h3 class="title">{{ user.username }}</h3>
+            <p class="subtitle">{{ age(user.birthdate) }} | {{ user.location }}</p>
+            
+
+            <div class="content custom-button">
+                <a class='text-black' href="{{url_for('chat.dialogue', sender=user.username)}}"><span>{{ _('Envoyer un message')}}</span><span class="icon is-medium" style="margin-left: 6.5rem; color:white;">
+                    <i class="fa fa-envelope-o fa-2x" style="color: #66582e;"></i>
+                </span></a>
+                
+            </div>
+            {% if user.profile.gift == 1 %}
+                <div class="content">
+                    <form action="{{url_for('main.gift_items')}}">
+                        <input type="hidden" name="user" value="{{user.id}}">
+                        <button type="submit" class="gift-button">{{ _('Envoyer un cadeaux')}} <i class="fa fa-gift fa-2x" style="float: right; margin-right: 8px; color: #66582e;" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+            {% endif %}
+            <div class="content custom-button">
+                <a class="text-black" href="{{url_for('report.block', username=user.username)}}"> {{ _('Bloquer ce membre') }}</a>
+                <span class="icon is-medium" style="margin-left: 6.5rem; color:white;">
+                    <i class="fa fa-user fa-2x" style="color: #66582e;"></i>
+                </span>
+            </div>
+
+            <div class="content custom-button">
+                <a class="text-black" href="{{url_for('report.report_user', id=user.id)}}">{{ _('Alerter le modérateur')}}</a>
+                <span class="icon is-medium" style="margin-left: 6rem; color:white;">
+                    <i class="fa fa-hand-paper-o fa-2x" style="color: #66582e;"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="column">
+            <section class="section">
+                    <p class="title is-5">{{ _('Description')}} </p>
+                    <p class="content">{{ user.profile.description }}</p>
+
+                    <p class="title is-5">{{ _('Votre slogan')}}</p>
+                    <p class="content">{{ user.profile.slogan }}</p>
+
+                    <p class="title is-5">{{ _('Premier rendez-vous')}}</p>
+                    <p class="content">{{ user.profile.first_meet }}</p>
+
+                    <p class="title is-5">{{ _('Qualités')}}</p>
+                    <p class="content">{{ user.profile.quality }}</p>
+
+                    <p class="title is-5">{{ _('Défauts')}}</p>
+                    <p class="content">{{ user.profile.defauts }}</p>
+
+                    <p class="title is-5">{{ _('Rêves')}}</p>
+                    <p class="content">{{ user.profile.dream }}</p>
+
+                    <p class="title is-5">{{ _('Amour')}}</p>
+                    <p class="content">{{ user.profile.love }}</p>
+
+                    <p class="title is-5">{{ _('Partenaire')}}</p>
+                    <p class="content">{{ user.profile.partner }}</p>
+
+                    <p class="title is-5">{{ _('Loisirs')}}</p>
+                    <p class="content">{{ user.profile.loisir }}</p>
+
+                    <p class="title is-5">{{ _('Amis')}}</p>
+                    <p class="content">{{ user.profile.friend }}</p>
+
+                    <p class="title is-5">{{ _('Expérience forte')}}</p>
+                    <p class="content">{{ user.profile.experience }}</p>
+
+                    <p class="title is-5">{{ _('Boulot')}}</p>
+                    <p class="content">{{ user.profile.boulot }}</p>
+
+                    <p class="title is-5">{{ _('Animaux')}}</p>
+                    <p class="content">{{ user.profile.animal }}</p>
+
+                    <p class="title is-5">{{ _('Enfants')}}</p>
+                    <p class="content">{{ user.profile.enfant }}</p>
+
+                    <p class="title is-5">{{ _('Avenir')}}</p>
+                    <p class="content">{{ user.profile.future }}</p>
+
+                    <p class="title is-5">{{ _('Fierté')}}</p>
+                    <p class="content">{{ user.profile.fierte }}</p>
+
+                    <p class="title is-5">{{ _('Culture')}}</p>
+                    <p class="content">{{ user.profile.culture }}</p>
+
+                    <p class="title is-5">{{ _('Malaise')}}</p>
+                    <p class="content">{{ user.profile.malaise }}</p>
+
+                    <p class="title is-5">{{ _('Sorties')}}</p>
+                    <p class="content">{{ user.profile.sortie }}</p>
+
+                    <p class="title is-5">{{ _('Voyages')}}</p>
+                    <p class="content">{{ user.profile.voyage }}</p>
+
+                    <p class="title is-5">{{ _('Addictions')}}</p>
+                    <p class="content">{{ user.profile.addication }}</p>
+
+                    <p class="title is-5">{{ _('Passions')}}</p>
+                    <p class="content">{{ user.profile.passion }}</p>
+                </section>
+                <section class="section profile-padding">
+                    <div class="is-divider" data-content="Caractère"></div>
+                    <h3 class="title is-6">{{ _('Bon à savoir :')}}</h3>
+                    <p>{{ _('Romantique')}} : {{ rom[user.profile.romantic]}}</p>
+                    <p>{{ _('Pour moi le mariage c\'est')}} : {{ mar[user.profile.marriage]}}</p>
+                </section>
+                <section class="section profile-padding">
+                    <div class="is-divider" data-content="Apparence"></div>
+                    <h3 class="title is-6">{{ _('Ces détails qui ne comptent pas ☺:')}}</h3>
+                    <p>{{ _('Ma taille')}} : {{ user.profile.height}}</p>
+                    <p>{{ _('Mon poids')}} : {{ user.profile.weight}}</p>
+                    <p>{{ _('Mes cheveux')}} : {{ hair[user.profile.hair]}}</p>
+                    <p>{{ _('Longueur de mes cheveux')}} : {{ harle[user.profile.hair_length]}}</p>
+                    <p>{{ _('Mon style')}} : {{ st[user.profile.style]}}</p>
+                    <p>{{ _('Ma silhouette')}} : {{ body[user.profile.body_type]}}</p>
+                </section>
+                <section class="section profile-padding">
+                    <div class="is-divider" data-content="Style de vie"></div>
+                    <h3 class="title is-6">{{ _('C’est ma vie !')}}</h3>
+                    <p>{{ _('Mon statut marital')}} : {{ status[user.profile.status]}}</p>
+                    <p>{{ _('Je vis')}} : {{ live[user.profile.live]}}</p>
+                    <p>{{ _('Je veux des enfants')}} : {{ chil[user.profile.want_children]}}</p>
+                    <p>{{ _('Mon origine')}} : {{ ori[user.profile.origin]}}</p>
+                    <p>{{ _('Mes yeux')}} : {{ eye[user.profile.eyes]}}</p>
+                </section>
+                <section class="section profile-padding">
+                    <div class="is-divider" data-content="Origines"></div>
+                    <p>{{ _('Ma religion')}} : {{ religion[user.profile.religion]}}</p>
+                    <p>{{ _('Ma nationalité')}} : {{ nationality[user.profile.nationality]}}</p>
+                </section>
+                
+                <section class="section profile-padding">
+                    <div class="is-divider" data-content="Autres"></div>
+                    <p>{{ _('Je fume')}} : {{ so[user.profile.smoke]}}</p>
+                    <p>{{ _('J\'ai des enfants')}} : {{ have_chil[user.profile.children]}}</p>
+                    <p>{{ _('Ma profession')}} : {{ job[user.profile.job]}}</p>
+                    <p>{{ _('Je mange')}} : {{ eat[user.profile.eat]}}</p>
+                    <p>{{ _('Mes animaux de compagnie')}} : {{ pet[user.profile.pet]}}</p>
+                    <p>{{ _('Je parle')}} : {{user.profile.speak1}}, {{user.profile.speak2}}, {{user.profile.speak3}}, {{user.profile.speak4}} </p>
+                    <p>{{ _('Quelles études avez-vous faites?')}} : {{ edu[user.profile.education]}}</p>
+                    <p>{{ _('Mes revenus')}} : {{ income[user.profile.income]}}</p>
+                </section>
+        </div>
+        <div class="column is-one-fifth section is-hidden-mobile">
+            <div class="media-content">
+                <div class="content">
+                    <p class=" gift-text text-white"> {{ _('Faire une surprise.')}} <i class="fa fa-gift fa-2x icon-position" aria-hidden="true"></i></p>
+                    <p class="subtitle"> {{ _('Envoyez un vrai cadeau')}}</p>
+                    <p class="content">{{ _('Une surprise, ça fait toujours plaisir. Epatez l’élu de votre cœur en lui envoyant des fleurs ou des chocolats en vrai.')}}</p>
+                    <figure class="">
+                        <img src="../static/img/choclat.jpg" alt="choclat" width="320px">
+                    </figure>
+                    <button class="button"><a class="text-white" href="/">{{ _('Envoyer un cadeau')}}</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    
+{% endblock %}

@@ -1,0 +1,27 @@
+{% from 'macros/_render_input.html' import render_input %}
+{% from 'macros/_render_textfield.html' import render_textfield %}
+
+{% extends 'layout.html' %}
+
+{% block content %}
+    
+    <section class="section">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <p class="title is-3" style="color: #000 !important;">{{ _('Vous voulez contacter Yes To Meet You ?')}}</p>
+                <p class="subtitle">{{ _('Nous sommes à votre écoute. Il suffit de remplir ce formulaire.')}}</p>
+                <form action="{{url_for('main.contact')}}" method="POST">
+                    {{ form.csrf_token }}
+                    {{ render_input(form.nom)}}
+                    {{ render_input(form.email)}}
+                    {{ render_input(form.telephone)}}
+                    {{ render_textfield(form.message)}}
+                    <div class="field">
+                        <input type="submit" class="button" value="{{ _('Envoyer') }}">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

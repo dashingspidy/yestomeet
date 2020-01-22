@@ -1,0 +1,109 @@
+{% extends 'layout.html' %}
+{% block title %}{{ _('S\'enregistrer') }}{% endblock %}
+{% block content %}
+    <div class="columns is-mobile">
+        <div class="column is-half-desktop is-offset-one-quarter-desktop">
+            <form action="" method="POST" class="box">
+                 {{ form.csrf_token }}
+                 <div class="field is-horizontal">
+                    <div class="field-body">
+                        <div class="field">
+                            {{ form.username.label(class='label')}}
+                            {{ form.username(class='input') }}
+                            {% for error in form.username.errors %}
+                              <p class="help is-danger">{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                        <div class="field">
+                            {{ form.email.label(class='label')}}
+                            {{ form.email(class='input')}}
+                            {% for error in form.email.errors %}
+                              <p class="help is-danger">{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                    </div>
+                 </div>
+                 <div class="field is-horizontal">
+                     <div class="field-body">
+                        <div class="field">
+                            {{ form.password.label(class='label')}}
+                            {{ form.password(class='input')}}
+                            {% for error in form.password.errors %}
+                              <p class="help is-danger">{{ error }}</p>
+                            {% endfor %}
+                         </div>
+                         <div class="field">
+                            {{ form.confirm.label(class='label')}}
+                            {{ form.confirm(class='input')}}
+                            {% for error in form.confirm.errors %}
+                              <p class="help is-danger">{{ error }}</p>
+                            {% endfor %}
+                         </div>
+                    </div>
+                 </div>
+                 <div class="field is-horizontal">
+                     <div class="field-body">
+                        <div class="field">
+                            {{ form.location.label(class='label')}}
+                            {{ form.location(class="input") }}
+                            {% for error in form.location.errors %}
+                              <p class="help is-danger">{{ error }}</p>
+                            {% endfor %}
+                        </div>
+                         <div class="field">
+                            {{ form.birthdate.label(class='label')}}
+                            {{ form.birthdate(class="input") }}
+                            {% for error in form.birthdate.errors %}
+                              <p class="help is-danger">{{ error }}</p>
+                            {% endfor %}
+                            <p id = "berror" class="help is-danger" style="display: none;">{{ _('Vous devez avoir min. 18 ans pour nous rejoindre.')}}</p>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="field is-horizontal">
+                     <div class="field-body">
+                        <div class="field">
+                             {{ form.gender.label(class="label") }}
+                            <div class="select">
+                              {{ form.gender() }}
+                            </div>
+                            {% for error in form.gender.errors %}
+                              <p class="help is-danger">{{ error }}</p>
+                            {% endfor %}
+                         </div>
+                         <div class="field">
+                            {{ form.looking_for.label(class="label") }}
+                            <div class="select">
+                              {{ form.looking_for() }}          
+                            </div>
+                            {% for error in form.looking_for.errors %}
+                              <p class="help is-danger">{{ error }}</p>
+                            {% endfor %}
+                         </div>
+                    </div>
+                 </div>
+                 <div class="field is-horizontal">
+                     <div class="field">
+                        <label class="checkbox">
+                            {{ form.checkbox(class="checkbox") }}
+                            <span>{{ _('Je certifie être majeur(e), <a class="text-red" href="/conditions">j’ai lu et j’accepte les CGU, la politique sur la vie privée de yestomeetyou et services décrits</a>') }}</span>
+                            {% for error in form.checkbox.errors %}
+                              <p class="help is-danger">{{ error }}</p>
+                            {% endfor %}
+                        </label>
+                     </div>
+                </div>
+                <div class="field is-horizontal">
+                    <div class="field-body">
+                        <div class="field">
+                            {{ form.submit(class='button is-block is-large')}}
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAaz-M_rn74nLpqMm7s5o-veRDLNBpjRc&libraries=places&language=fr"></script>
+    <script src="{{ url_for('static', filename='js/map.js') }}" ></script>
+{% endblock %}

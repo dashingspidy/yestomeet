@@ -1,0 +1,190 @@
+{% extends 'layout.html' %}
+
+{% block title %}Votre Profile{% endblock %}
+{% block content %}
+    <section>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+              {% for message in messages %}
+              <div class="notification is-danger">
+                <button class="delete"></button>
+                {{ message }}
+              </div>
+              {% endfor %}
+            {% endif %}
+        {% endwith %}
+        <div class="columns">
+            <div class="column is-one-quarter">
+                <section class="section">
+                    {% if photo == None %}
+                        <p><a class="text-red" href="{{url_for('profile.upload')}}">{{ _('Ajouter un photo')}}</a></p>
+                    {% else %}
+                        <figure class="image is-3by2">
+                            <img src="http://yestomeetyou.s3.amazonaws.com/{{photo.url}}">
+                        </figure>
+                        <div class="columns is-multiline is-mobile" style="margin-top: .75rem;">
+                            {% if photos != None %}
+                                {% for photo in photos %}
+                                    <div class="column is-one-quarter">
+                                        <figure>
+                                            <a data-fancybox="gallery" href="http://yestomeetyou.s3.amazonaws.com/{{photo.url}}">
+                                                <img src="http://yestomeetyou.s3.amazonaws.com/{{photo.url}}">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                {% endfor %}
+                            {% endif %}
+                        </div>
+                        <p><a class="text-red" href="{{url_for('profile.upload')}}">{{ _('Ajouter un photo')}}</a></p>
+                    {% endif %}
+                </section>
+                <div class="is-hidden-tablet is-hidden-desktop is-hidden-widescreen is-hidden-fullhd">
+                    <div class="section">
+                        <p><a href="/inbox" class="visit text-red" style="float: left;">{{g.msg_count}} {{ _('messages')}} <i class="fa fa-envelope-o"></i> </a><a href="/visit" class="visit text-red" style="float: right;">{{g.count}} {{ _('Visits')}} <i class="fa fa-users" aria-hidden="true"></i></a></p>
+                        
+                    </div>
+                    <section class="my-account section">
+                        <p class="subtitle gift-text text-white "> {{_('Bienvenue')}} {{ profile.user.username }}</p>
+                        <p><a class="text-red" href="{{url_for('profile.edit_profile')}}">{{ _('Éditer mon profil')}} <i class="fa fa-pencil" aria-hidden="true"></i></a></p>
+                    </section>
+                </div>
+                <div class="is-hidden-mobile">
+                    <p class="gift-text text-white"> {{ _('Une photo à votre image.')}}<i class="fa fa-camera-retro fa-2x icon-position" aria-hidden="true"></i></p>
+                    <p class="subtitle"> {{ _('Sublimez votre profil.')}}</p>
+                    <p class="content">{{ _('Une mauvaise photo peut tout gâcher. Trouvez facilement le photographe qui révèlera au monde votre beauté intérieure.')}}</p>
+                    <button class="button">{{ _('Chercher un photographe')}}</button>
+                </div>
+            </div>
+            <div class="column">
+                <section class="section">
+                    <p class="title is-5">{{ _('Description')}} </p>
+                    <p class="content">{{ profile.description }}</p>
+
+                    <p class="title is-5">{{ _('Votre slogan')}}</p>
+                    <p class="content">{{ profile.slogan }}</p>
+
+                    <p class="title is-5">{{ _('Premier rendez-vous')}}</p>
+                    <p class="content">{{ profile.first_meet }}</p>
+
+                    <p class="title is-5">{{ _('Qualités')}}</p>
+                    <p class="content">{{ profile.quality }}</p>
+
+                    <p class="title is-5">{{ _('Défauts')}}</p>
+                    <p class="content">{{ profile.defauts }}</p>
+
+                    <p class="title is-5">{{ _('Rêves')}}</p>
+                    <p class="content">{{ profile.dream }}</p>
+
+                    <p class="title is-5">{{ _('Amour')}}</p>
+                    <p class="content">{{ profile.love }}</p>
+
+                    <p class="title is-5">{{ _('Partenaire')}}</p>
+                    <p class="content">{{ profile.partner }}</p>
+
+                    <p class="title is-5">{{ _('Loisirs')}}</p>
+                    <p class="content">{{ profile.loisir }}</p>
+
+                    <p class="title is-5">{{ _('Amis')}}</p>
+                    <p class="content">{{ profile.friend }}</p>
+
+                    <p class="title is-5">{{ _('Expérience forte')}}</p>
+                    <p class="content">{{ profile.experience }}</p>
+
+                    <p class="title is-5">{{ _('Boulot')}}</p>
+                    <p class="content">{{ profile.boulot }}</p>
+
+                    <p class="title is-5">{{ _('Animaux')}}</p>
+                    <p class="content">{{ profile.animal }}</p>
+
+                    <p class="title is-5">{{ _('Enfants')}}</p>
+                    <p class="content">{{ profile.enfant }}</p>
+
+                    <p class="title is-5">{{ _('Avenir')}}</p>
+                    <p class="content">{{ profile.future }}</p>
+
+                    <p class="title is-5">{{ _('Fierté')}}</p>
+                    <p class="content">{{ profile.fierte }}</p>
+
+                    <p class="title is-5">{{ _('Culture')}}</p>
+                    <p class="content">{{ profile.culture }}</p>
+
+                    <p class="title is-5">{{ _('Malaise')}}</p>
+                    <p class="content">{{ profile.malaise }}</p>
+
+                    <p class="title is-5">{{ _('Sorties')}}</p>
+                    <p class="content">{{ profile.sortie }}</p>
+
+                    <p class="title is-5">{{ _('Voyages')}}</p>
+                    <p class="content">{{ profile.voyage }}</p>
+
+                    <p class="title is-5">{{ _('Addictions')}}</p>
+                    <p class="content">{{ profile.addication }}</p>
+
+                    <p class="title is-5">{{ _('Passions')}}</p>
+                    <p class="content">{{ profile.passion }}</p>
+                </section>
+                <section class="section profile-padding">
+                    <div class="is-divider" data-content="Caractère"></div>
+                    <h3 class="title is-6">{{ _('Bon à savoir :')}}</h3>
+                    <p>{{ _('Romantique')}} : {{ rom[profile.romantic]}}</p>
+                    <p>{{ _('Pour moi le mariage c\'est')}} : {{ mar[profile.marriage]}}</p>
+                </section>
+                <section class="section profile-padding">
+                    <div class="is-divider" data-content="Apparence"></div>
+                    <h3 class="title is-6">{{ _('Ces détails qui ne comptent pas ☺:')}}</h3>
+                    <p>{{ _('Ma taille')}} : {{ profile.height}}</p>
+                    <p>{{ _('Mon poids')}} : {{ profile.weight}}</p>
+                    <p>{{ _('Mes cheveux')}} : {{ hair[profile.hair]}}</p>
+                    <p>{{ _('Longueur de mes cheveux')}} : {{ harle[profile.hair_length]}}</p>
+                    <p>{{ _('Mon style')}} : {{ st[profile.style]}}</p>
+                    <p>{{ _('Ma silhouette')}} : {{ body[profile.body_type]}}</p>
+                </section>
+                <section class="section profile-padding">
+                    <div class="is-divider" data-content="Style de vie"></div>
+                    <h3 class="title is-6">{{ _('C’est ma vie !')}}</h3>
+                    <p>{{ _('Mon statut marital')}} : {{ status[profile.status]}}</p>
+                    <p>{{ _('Je vis')}} : {{ live[profile.live]}}</p>
+                    <p>{{ _('Je veux des enfants')}} : {{ chil[profile.want_children]}}</p>
+                    <p>{{ _('Mon origine')}} : {{ ori[profile.origin]}}</p>
+                    <p>{{ _('Mes yeux')}} : {{ eye[profile.eyes]}}</p>
+                </section>
+                <section class="section profile-padding">
+                    <div class="is-divider" data-content="Origines"></div>
+                    <p>{{ _('Ma religion')}} : {{ religion[profile.religion]}}</p>
+                    <p>{{ _('Ma nationalité')}} : {{ nationality[profile.nationality]}}</p>
+                </section>
+                
+                <section class="section profile-padding">
+                    <div class="is-divider" data-content="Autres"></div>
+                    <p>{{ _('Je fume')}} : {{ so[profile.smoke]}}</p>
+                    <p>{{ _('J\'ai des enfants')}} : {{ have_chil[profile.children]}}</p>
+                    <p>{{ _('Ma profession')}} : {{ job[profile.job]}}</p>
+                    <p>{{ _('Je mange')}} : {{ eat[profile.eat]}}</p>
+                    <p>{{ _('Mes animaux de compagnie')}} : {{ pet[profile.pet]}}</p>
+                    <p>{{ _('Je parle')}} : {{profile.speak1}}, {{profile.speak2}}, {{profile.speak3}}, {{profile.speak4}} </p>
+                    <p>{{ _('Quelles études avez-vous faites?')}} : {{ edu[profile.education]}}</p>
+                    <p>{{ _('Mes revenus')}} : {{ income[profile.income]}}</p>
+                </section>
+            </div>
+            <div class="column is-one-fifth is-hidden-mobile">
+                <div class="section">
+                    <p><a href="/inbox" class="visit text-red" style="float: left; font-size: 18px;">{{g.msg_count}} {{ _('messages')}} <i class="fa fa-envelope-o"></i> </a><a href="/visit" class="visit text-red" style="float: right; font-size: 18px;">{{g.count}} {{ _('Visits')}} <i class="fa fa-users" aria-hidden="true"></i></a></p>
+                </div>
+                <section class="my-account">
+                    <p class="subtitle gift-text text-white ">{{_('Bienvenue')}} {{ profile.user.username }} <i class="fa fa-circle icon-position" style="color: #95c11f; margin-top: 4px !important;" aria-hidden="true"></i></p>
+                    <p><a class="text-red" href="{{url_for('profile.edit_profile')}}">{{ _('Éditer mon profil')}} <i class="fa fa-pencil" aria-hidden="true"></i></a></p>
+                </section>
+
+                <div class="">
+                    <h3 class=" gift-text text-white">{{ _('Faire une surprise.')}} <i class="fa fa-gift fa-2x icon-position" aria-hidden="true"></i></h3>
+                        <p class="subtitle"> {{ _('Envoyez un vrai cadeau')}}</p>
+                        <p class="content">{{ _('Une surprise, ça fait toujours plaisir. Epatez l’élu de votre cœur en lui envoyant des fleurs ou des chocolats en vrai.')}}</p>
+                        <figure class="">
+                            <img src="../static/img/choclat.jpg" alt="choclat" width="320px">
+                        </figure>
+                        <button class="button"><a class="text-white" href="/">{{ _('Envoyer un cadeau')}}</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

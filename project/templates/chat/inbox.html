@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %}Messages{% endblock %}
+{% block content %}
+    <section class="section">
+        <article class="content">
+            <h3>{{ _('Messages')}}</h3>
+            <div class="is-divider"></div>
+        </article>
+        <div class="columns is-mobile">
+            <div class=" column is-one-third-desktop">
+                {% if u_list != None %}
+                    {% for u in u_list %}
+                       <nav class="panel"> 
+                        <a class="panel-block" href="{{ url_for('chat.dialogue',sender=u.username) }}">{{ u.username }}</a>
+                        </nav>
+                    {% endfor %}
+                {% else %}
+                    <h3>{{ _('Vous n’avez pas encore envoyé de message...')}}</h3>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+{% endblock %}
